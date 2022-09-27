@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte2
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
 
 fun main() {
     //programa para calcular el numero mayor entre tres opciones

@@ -1,7 +1,7 @@
-package com.example.alejandronasarreparte1_pmdm.parte2
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
 
 fun main() {
-    //
+    // programa para verificar que una fecha esta situada en el primer trimestre del año
     println("introducir dia:")
     val dia = readLine()!!.toInt()
     println("introducir mes:")
