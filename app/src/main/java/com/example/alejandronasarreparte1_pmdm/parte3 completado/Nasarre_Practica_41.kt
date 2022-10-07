@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte3
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
 
 fun main() {
     //calculo de cantidad de numeros pares e impares de n numeros
