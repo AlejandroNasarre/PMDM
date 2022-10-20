@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 
 //creacion de dos clases Cliente y Banco que se implementan mutuamente
 //y utilizacion de sus funciones

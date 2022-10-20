@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 
 //creacion de un objeto punto con coordenadas x e y con constructor definido
 // y utilizacion de sus funciones

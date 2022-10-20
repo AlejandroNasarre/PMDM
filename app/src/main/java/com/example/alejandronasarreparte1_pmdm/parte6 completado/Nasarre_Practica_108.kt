@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //carga de un array de cantidad
 //cargada por consola e impresion del valor menor y si se repite o no
 //mediante funciones

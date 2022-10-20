@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 
 //creacion de dos objetos triangulo con tres lados con distintos constructores de
 //variable y utilizacion de sus funciones

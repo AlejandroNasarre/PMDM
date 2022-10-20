@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //programa que permite llenar un array por consola y mostrar el valor acumulado,
 //el valor acumulado de los numeros mayores a 36 y los numeros mayores a 50
 fun main() {

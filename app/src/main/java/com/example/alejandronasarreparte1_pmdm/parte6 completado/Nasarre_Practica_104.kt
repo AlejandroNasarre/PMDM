@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //programa que permite llenar dos arrays por consola e introducir en un tercer array
 //el resultado de la suma de los valores de las mismas posiciones de los dos
 //primeros arrays

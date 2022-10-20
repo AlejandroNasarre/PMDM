@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //creacion de un objeto persona con nombre y edad y utilizacion de sus funciones
 fun main() {
     val persona = Persona2("Juan",23)

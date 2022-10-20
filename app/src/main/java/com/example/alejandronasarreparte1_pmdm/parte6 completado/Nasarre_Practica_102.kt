@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //programa que permite llenar un array por consola y mostrar los
 //elementos posteriormente
 fun main() {

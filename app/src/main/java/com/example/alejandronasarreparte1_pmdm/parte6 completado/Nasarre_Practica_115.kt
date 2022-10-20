@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //creacion de un objeto alumno con nombre y nota con constructor definido
 // y utilizacion de sus funciones
 fun main() {

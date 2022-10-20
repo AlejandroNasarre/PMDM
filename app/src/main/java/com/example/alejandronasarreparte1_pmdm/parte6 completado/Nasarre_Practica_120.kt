@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //programa para jugar a los dados mediante las clases Dado y JuegoDeDados
 fun main() {
     val juegoDeDados = JuegoDeDados()
@@ -12,7 +12,7 @@ class Dado() {
         valor = (Math.random() * 6 + 1).toInt()
     }
 
-    //funcion para imprimir el el resultado del dado
+    //funcion para imprimir el resultado del dado
     fun imprimir() {
         println(valor)
     }

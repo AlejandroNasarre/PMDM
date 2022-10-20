@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //carga e impresion de un array mediante funciones
 fun main() {
     val valores = IntArray(5)

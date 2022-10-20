@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //carga e impresion de un array de sueldos de cantidad
 //cargada por consola mediante funciones
 fun main() {

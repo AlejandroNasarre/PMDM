@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //creacion de un objeto Operaciones con dos valores
 // y utilizacion de sus funciones
 fun main() {

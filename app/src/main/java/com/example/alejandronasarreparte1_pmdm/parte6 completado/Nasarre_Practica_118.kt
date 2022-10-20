@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 
 //creacion de un objeto Hijos con un array de edades
 // y utilizacion de sus funciones

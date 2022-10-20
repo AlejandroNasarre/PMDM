@@ -1,16 +1,28 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //creacion de un objeto triangulo con tres lados de variable y utilizacion de sus funciones
 fun main() {
+    val triangulo = Triangulo()
     val lado1 = 2
     val lado2 = 4
     val lado3 = 6
-    val triangulo = Triangulo2(lado1,lado2,lado3)
+    triangulo.inicializarTriangulo(lado1,lado2,lado3)
     triangulo.ladoMasGrande()
     triangulo.esEquilatero()
 
 }
-//calse Triangulo con constructor
-class Triangulo2 (var lado1 : Int,var lado2 : Int,var lado3 : Int){
+
+class Triangulo {
+    private var lado1 = 0
+    private var lado2 = 0
+    private var lado3 = 0
+
+    //inicializador de las variables de clase
+    fun inicializarTriangulo(lado1 : Int,lado2 : Int,lado3 : Int) {
+        this.lado1 = lado1
+        this.lado2 = lado2
+        this.lado3 = lado3
+    }
+
     //funcion para imprimir el lado mas grande del objeto
     fun ladoMasGrande() {
         if (lado1 > lado2 && lado1 > lado3)

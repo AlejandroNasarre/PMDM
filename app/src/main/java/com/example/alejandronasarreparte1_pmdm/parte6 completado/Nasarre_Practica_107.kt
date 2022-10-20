@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte6
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
 //carga e impresion de la suma de los valores de un array de cantidad
 //cargada por consola mediante funciones
 fun main() {
