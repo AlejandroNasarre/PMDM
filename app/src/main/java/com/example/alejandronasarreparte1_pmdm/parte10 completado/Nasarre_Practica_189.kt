@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte10
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
 
 fun main() {
     val boleto = boleto()

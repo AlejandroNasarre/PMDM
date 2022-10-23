@@ -1,4 +1,4 @@
-package com.example.alejandronasarreparte1_pmdm.parte10
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
 //implementacion de diccionario mediante mapa
 fun main() {
     val diccionario = mapOf(
