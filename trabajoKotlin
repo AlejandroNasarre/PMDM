@@ -1,0 +1,5172 @@
+Práctica 2.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //realizacion de operaciones matematicas
+    val n1 = 5
+    val n2 = 5
+    var n3 = n1 + n2
+    println(n3)
+    n3 = n1 * n2
+    println(n3)
+}
+
+
+Práctica 3.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //calculo de superficie y perimetro
+    val lado = 50
+    val perimetro = lado * 4
+    val superficie = lado * lado
+    println("el perimetro es: " + perimetro)
+    println("la superficie es: " + superficie)
+}
+
+
+Práctica 4.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //calculo del peso medio
+    val peso1 = 70.3f
+    val peso2 = 65.32f
+    val peso3 = 98.4f
+    val pesoMedio = (peso1 + peso2 + peso3) / 3
+    println("el peso medio es: $pesoMedio")
+}
+
+
+Práctica 5.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //realizacion de operaciones matematicas pidiendo parametros por consola
+    println("introducir primer valor")
+    val n1 = readLine()!!.toInt()
+    println("introducir segundo valor")
+    val n2 = readLine()!!.toInt()
+    var n3 = n1 + n2
+    println(n3)
+    n3 = n1 * n2
+    println(n3)
+}
+
+
+Práctica 6.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //calculo de un cuadrado con lado ingresado por consola
+    println("introducir lado")
+    val lado = readLine()!!.toInt()
+    println("el perimetro es: " + (lado * 4))
+}
+
+
+Práctica 7.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //calculo de la cantidad que debe abonar el comprador
+    println("introducir precio producto")
+    val precio = readLine()!!.toDouble()
+    println("introducir cantidad")
+    val cantidad = readLine()!!.toInt()
+    println("a pagar: " + (precio * cantidad))
+}
+
+
+Práctica 8.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //realizacion  de operaciones basicas
+    println("introducir numero 1:")
+    val n1 = readLine()!!.toInt()
+    println("introducir numero 2:")
+    val n2 = readLine()!!.toInt()
+    println("introducir numero 3:")
+    val n3 = readLine()!!.toInt()
+    println("introducir numero 4:")
+    val n4 = readLine()!!.toInt()
+
+    println("la suma de los dos primeros numeros es: " + (n1 + n2))
+    println("el producto de los dos ultimos numeros es: " + (n3 * n4))
+}
+
+
+Práctica 9.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //calculo suma y promedio de 4 variables
+    println("introducir numero 1:")
+    val n1 = readLine()!!.toInt()
+    println("introducir numero 2:")
+    val n2 = readLine()!!.toInt()
+    println("introducir numero 3:")
+    val n3 = readLine()!!.toInt()
+    println("introducir numero 4:")
+    val n4 = readLine()!!.toInt()
+    val suma = n1 + n2 + n3 + n4
+    println("la suma de los cuatro numeros es: $suma")
+    //casteamos suma a float para mostrar los decimales
+    val promedio = suma.toFloat() / 4
+    println("el promedio de los cuatro numeros es: $promedio")
+}
+
+
+Práctica 10.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //estructura condicional simple para detectar si se deben pagar impuestos
+    print("Ingrese el sueldo del empleado:")
+    val sueldo = readLine()!!.toDouble()
+    if (sueldo > 3000)
+        println("Se deben pagar impuestos")
+}
+
+
+
+Práctica 11.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //creacion de estructura condicional compuesta para dertectar el numero mayor
+    println("introducir n1:")
+    val n1 = readLine()!!.toInt()
+    println("introducir n2:")
+    val n2 = readLine()!!.toInt()
+    if (n1 > n2)
+        println("$n1 es mayor")
+    else
+        println("$n2 es mayor")
+}
+
+
+
+Práctica 12.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //creacion de estructura condicional compuesta con varias instrucciones por ramificacion
+    println("introducir n1:")
+    val n1 = readLine()!!.toInt()
+    println("introducir n2:")
+    val n2 = readLine()!!.toInt()
+    if (n1 < n2) {
+        val suma = n1 + n2
+        val resta = n2 - n1
+        println("suma: $suma resta: $resta")
+    } else {
+        val pruducto = n1 * n2
+        val division = n1.toFloat() / n2
+        println("producto: $pruducto division: $division")
+    }
+}
+
+
+Práctica 13.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //programa para comprobar que la media de un alumno es mayor que 7
+    println("introducir nota 1:")
+    val n1 = readLine()!!.toInt()
+    println("introducir nota 2:")
+    val n2 = readLine()!!.toInt()
+    println("introducir nota 3:")
+    val n3 = readLine()!!.toInt()
+    val promedio = (n1 + n2 + n3) / 3
+    if (promedio >= 7)
+        println("promocionado")
+}
+
+
+Práctica 14.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //programa para ver cuantas cifras tiene un numero introducido por consola
+    println("introducir numero [1 - 99]:")
+    val n1 = readLine()!!.toInt()
+    if (n1 >= 10 && n1 < 100)
+        println("el numero tiene dos cifras.")
+    else if (n1 < 10)
+        println("el numero tiene una cifra.")
+    else
+        println("numero no valido")
+}
+
+
+Práctica 15.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //asignacion de valor a una variable mediante if else
+    println("introducir n1:")
+    val n1 = readLine()!!.toInt()
+    println("introducir n2:")
+    val n2 = readLine()!!.toInt()
+    val mayor = if (n1 > n2) n1 else n2
+    println("el mayor es $mayor")
+}
+
+
+Práctica 16.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //asignacion de valor a una variable mediante if else 2
+    println("introducir valor:")
+    val n1 = readLine()!!.toInt()
+    val resultado = if (n1 % 2 == 0){
+        print("el cuadrado es: ")
+        n1*n1
+    }else{
+        print("el cubo es: ")
+        n1*n1*n1
+    }
+    println(resultado)
+}
+
+
+Práctica 17.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //algoritmo para calcular la cantidad de digitos de un numero dado entre el 1 y el 99
+    println("introducir numero [1 - 99]:")
+    val n1 = readLine()!!.toInt()
+    val cDigitos = if (n1 > 9) 2 else 1
+    println("el numero $n1 tiene $cDigitos digitos")
+}
+
+
+
+Práctica 18.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    fun main() {
+        //programa para clasificar la nota media de un alumno
+        println("introducir nota 1:")
+        val n1 = readLine()!!.toInt()
+        println("introducir nota 2:")
+        val n2 = readLine()!!.toInt()
+        println("introducir nota 3:")
+        val n3 = readLine()!!.toInt()
+        val promedio = (n1 + n2 + n3) / 3
+        if (promedio >= 7)
+            println("promocionado")
+        else if (promedio >= 4)
+            println("regular")
+        else
+            println("reprobado")
+    }
+}
+
+
+Práctica 19.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //programa para calcular el numero mayor entre tres opciones
+    println("introducir n1:")
+    val n1 = readLine()!!.toInt()
+    println("introducir n2:")
+    val n2 = readLine()!!.toInt()
+    println("introducir n3:")
+    val n3 = readLine()!!.toInt()
+    var nAux = if (n1 > n2) n1 else n2
+    nAux = if (nAux > n3) nAux else n3
+    println("El numero mayor es $nAux")
+}
+
+
+Práctica 20.
+
+
+package com.example.alejandronasarreparte1_pmdm
+
+fun main() {
+    //programa para calcular el signo de un numero introducido por pantalla
+    println("introducir numero:")
+    val n1 = readLine()!!.toInt()
+    val signo = if (n1 < 0) "negativo" else if (n1 == 0) "nulo" else "positivo"
+    println("el numero $n1 es $signo.")
+}
+
+
+Práctica 21.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //programa para ver cuantas cifras tiene un numero introducido por consola
+    println("introducir numero [1 - 999]:")
+    val n1 = readLine()!!.toInt()
+    if (n1 < 10)
+        println("el numero tiene 1 cifra.")
+    else if (n1 < 100)
+        println("el numero tiene 2 cifras.")
+    else if (n1 < 1000)
+        println("el numero tiene 3 cifras.")
+    else
+    println("numero no valido")
+}
+
+
+Práctica 22.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //programa para calcular el nivel de un postulante y clasificarlo
+    //segun el porcentaje de aciertos a las preguntas
+    println("introducir numero de preguntas")
+    val preguntas = readLine()!!.toInt()
+    println("introducir numero de aciertos")
+    val aciertos = readLine()!!.toInt()
+    val porcentaje = (aciertos.toFloat()/preguntas) * 100
+    if (porcentaje >= 90)
+        println("Nivel Maximo: $porcentaje%")
+    else if (porcentaje >= 75)
+        println("Nivel Medio: $porcentaje%")
+    else if (porcentaje >= 50)
+        println("Nivel Regular: $porcentaje%")
+    else
+        println("Fuera de nivel: $porcentaje%")
+}
+
+
+Práctica 23.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //programa para calcular el numero mayor entre tres opciones
+    println("introducir n1:")
+    val n1 = readLine()!!.toInt()
+    println("introducir n2:")
+    val n2 = readLine()!!.toInt()
+    println("introducir n3:")
+    val n3 = readLine()!!.toInt()
+    if (n1 >= n2 && n1 >= n3)
+        println("el numero mayor es: $n1 ")
+    else if (n2 >= n3)
+        println("el numero mayor es: $n2 ")
+    else
+        println("el numero mayor es: $n3 ")
+}
+
+
+Práctica 24.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    // programa para verificar que una fecha esta situada en el primer trimestre del año
+    println("introducir dia:")
+    val dia = readLine()!!.toInt()
+    println("introducir mes:")
+    val mes = readLine()!!.toInt()
+    println("introducir año:")
+    val anio = readLine()!!.toInt()
+    if (mes == 1 || mes == 2 || mes == 3)
+        println("primer trimestre.  dia:$dia  mes:$mes  año:$anio")
+}
+
+
+Práctica 25.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    // programa para verificar que una fecha corresponde a navidad
+    println("introducir dia:")
+    val dia = readLine()!!.toInt()
+    println("introducir mes:")
+    val mes = readLine()!!.toInt()
+    println("introducir año:")
+    val anio = readLine()!!.toInt()
+    if (mes == 12 && dia == 25)
+        println("dia de navidad")
+}
+
+
+Práctica 26.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //introduccion de 3 valores, si son iguales mostrar el cubo del valor
+    println("introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("introducir tercer valor:")
+    val n3 = readLine()!!.toInt()
+    if (n1 == n2 && n1 == n3)
+        println(n1*n2*n3)
+}
+
+
+Práctica 27.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //introduccion de 3 valores, si todos son menores de 10 mostrar mensaje
+    println("introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("introducir tercer valor:")
+    val n3 = readLine()!!.toInt()
+    if (n1 < 10 && n2 < 10 && n3 < 10)
+        println("Todos los números son menores a diez")
+}
+
+
+Práctica 28.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //introduccion de 3 valores, si uno es menor de 10 mostrar mensaje
+    println("introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("introducir tercer valor:")
+    val n3 = readLine()!!.toInt()
+    if (n1 < 10 || n2 < 10 || n3 < 10)
+        println("Alguno de los números es menor a diez")
+}
+
+
+Práctica 29.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //programa para situar en cuadrante correspondiente ciertas coordenadas
+    println("introducir x:")
+    val x = readLine()!!.toInt()
+    println("introducir y:")
+    val y = readLine()!!.toInt()
+    if (x > 0 && y > 0 )
+        println("primer cuadrante")
+    else if (x < 0 && y > 0 )
+        println("primer cuadrante")
+}
+
+
+Práctica 30.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //introduccion de 3 valores y asignacion del menor y mayor valor a variables
+    println("introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("introducir tercer valor:")
+    val n3 = readLine()!!.toInt()
+    val menor = if (n1 <= n2 && n1 <= n3) n1 else if (n2 <= n3) n2 else n3
+    val mayor = if (n1 >= n2 && n1 >= n3) n1 else if (n2 >= n3) n2 else n3
+    println("el numero menor es: $menor el numero mayor es: $mayor")
+}
+
+
+Práctica 31.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //impresion de los primeros 100 numeros
+    var n1 = 1
+    while (n1 <= 100)
+        println(n1++)
+}
+
+
+Práctica 32.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //impresion de todos los numeros hasta el valor introducido por consola
+    println("introducir valor:")
+    val n1 = readLine()!!.toInt()
+    var i = 1
+    while (i <= n1)
+        println(i++)
+}
+
+
+Práctica 33.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //calculo de la suma de 10 numeros introducidos por pantalla y su media
+    var suma = 0
+    for (i in 1..10) {
+        println("introducir valor numero $i:")
+        suma += readLine()!!.toInt()
+    }
+    println("la suma es: $suma")
+    println("el promedio es: " + (suma.toFloat()/10))
+}
+
+
+Práctica 34.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //introduccion de n piezas y revision de cuantas son aptas
+    println("introducir numero de piezas a procesar:")
+    val nPiezas =  readLine()!!.toInt()
+    var nPiezasAptas = 0
+    for (i in 1..nPiezas) {
+        println("introducir perfil de la pieza numero $i:")
+        val perfil = readLine()!!.toFloat()
+        if (perfil in 1.20..1.30)
+            nPiezasAptas++
+    }
+    println("el numero de piezas aptas es de $nPiezasAptas de $nPiezas")
+}
+
+
+Práctica 35.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //introduccion de 10 notas y contado de notas superiores e inferiores a 7
+    var nSuperiores = 0
+    for (i in 1..10) {
+        println("introducir nota numero $i:")
+        val nota = readLine()!!.toInt()
+        if (nota >= 7)
+            nSuperiores++
+    }
+    val nInferiores = 10 - nSuperiores
+    println("el numero de notas superiores o iguales a 7 es $nSuperiores")
+    println("el numero de notas inferiores a 7 es $nInferiores")
+}
+
+
+Práctica 36.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //introduccion de alturas de n personas y calculo de su promedio
+    println("introducir numero de personas:")
+    val nPersonas =  readLine()!!.toInt()
+    var sumaAltura = 0f
+    for (i in 1..nPersonas) {
+        println("introducir altura persona numero $i:")
+        sumaAltura += readLine()!!.toFloat()
+    }
+    val promedioAltura = sumaAltura/nPersonas
+    println("la altura promedio es: $promedioAltura")
+}
+
+
+Práctica 37.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //clasificacion de salarios de N empleados y calculo del coste total
+    println("introducir numero de empleados:")
+    val nEmpleados =  readLine()!!.toInt()
+    var nSalarios100to300 = 0
+    var costeTotal = 0
+    for (i in 1..nEmpleados) {
+        println("introducir salario empleado numero $i:")
+        val salario = readLine()!!.toInt()
+        costeTotal += salario
+        if (salario <= 300)
+            nSalarios100to300++
+    }
+    val nSalarios301de500 = nEmpleados - nSalarios100to300
+    println("hay $nSalarios100to300 empleados con salario de 100 a 300 euros" )
+    println("hay $nSalarios301de500 empleados con salario de 301 a 500 euros" )
+    println("coste total de los salarios $costeTotal euros")
+}
+
+
+Práctica 38.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //impresion de los 25 primeros numeros de la serie 11,22,33,44
+    for (i in 1..25)
+        println(i * 11)
+}
+
+
+Práctica 39.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //impresion de los multiplos de 8 hasta 500
+    var i = 1
+    while (i * 8 <= 500) {
+        println(i * 8)
+        i++
+    }
+}
+
+
+
+Práctica 40.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte2 completado`
+
+fun main() {
+    //introduccion de dos listas de 5 valores y comparacion del valor acumulado entre ellas
+    println("primera lista:")
+    var sumaL1 = 0
+    for (i in 1..5) {
+        println("introducir valor numero $i:")
+        sumaL1 += readLine()!!.toInt()
+    }
+    println("segunda lista:")
+    var sumaL2 = 0
+    for (i in 1..5) {
+        println("introducir valor numero $i:")
+        sumaL2 += readLine()!!.toInt()
+    }
+    if (sumaL1 > sumaL2)
+        println("la primera lista es mayor")
+    else if (sumaL2 > sumaL1)
+        println("la segunda lista es mayor")
+    else
+        println("las dos listas son iguales")
+}
+
+
+Práctica 41.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //calculo de cantidad de numeros pares e impares de n numeros
+    println("cantidad de numeros a introducir:")
+    val nNumeros =  readLine()!!.toInt()
+    var nPares = 0
+    for (i in 1..nNumeros) {
+        println("introducir numero $i:")
+        val n = readLine()!!.toInt()
+        if (n % 2 == 0)
+            nPares++
+    }
+    val nImpares =  nNumeros - nPares
+    println("hay $nPares numeros pares")
+    println("hay $nImpares numeros impares")
+}
+
+
+Práctica 42.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    // implementacion de bucle do while para clasificar un numero introducido por consola
+    // hasta que el usuario introduce 0
+    do {
+        println("Introducir numero (1-999), (0) para terminar:")
+        val n = readLine()!!.toInt()
+        if (n < 10 && n > 0)
+            println("el numero introducido tiene 1 digito")
+        else if (n < 100)
+            println("el numero introducido tiene 2 digitos")
+        else if (n < 1000)
+            println("el numero introducido tiene 3 digitos")
+    } while (n != 0)
+}
+
+
+Práctica 43.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    // implementacion de bucle do while para calcular el promedio de n numeros introducidos por
+    // consola hasta que el usuario introduce 0
+    var suma = 0
+    var nNumeros = 0
+    do {
+        println("Introducir valor, (0) para terminar:")
+        val n = readLine()!!.toInt()
+        if (n != 0) {
+            suma += n
+            nNumeros++
+        }
+    } while (n != 0)
+    println("El promedio es: " + (suma.toFloat()/nNumeros))
+}
+
+
+Práctica 44.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    // implementacion de bucle do while para el conteo y clasificacion de piezas por peso
+    // hasta que el usuario introduce 0 por consola
+    var cantPiezas = 0
+    var cantPiezasLigeras = 0
+    var cantPiezasMedianas = 0
+    var cantPiezasPesadas = 0
+    do {
+        println("Introducir peso pieza, (0) para terminar:")
+        val peso = readLine()!!.toFloat()
+        if (peso != 0f) {
+            cantPiezas++
+            if (peso < 9.8f)
+                cantPiezasLigeras++
+            else if (peso > 10.2f)
+                cantPiezasPesadas++
+            else
+                cantPiezasMedianas++
+        }
+    } while (peso != 0f)
+    println("cantidad total de piezas: $cantPiezas")
+    println("cantidad de piezas menores de 9.8kg: $cantPiezasLigeras")
+    println("cantidad de piezas de entre 9.8kg y 10.2kg: $cantPiezasMedianas")
+    println("cantidad de piezas mayores de 10.2kg: $cantPiezasPesadas")
+}
+
+
+Práctica 45.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    // implementacion de bucle do while para calcular la suma de n numeros introducidos por
+    // consola hasta que el usuario introduce 9999
+    var suma = 0
+    do {
+        println("Introducir valor a sumar, (9999) para terminar:")
+        val n = readLine()!!.toInt()
+        if (n != 9999) {
+            suma += n
+        } else
+            println("la carga de valores a terminado")
+    } while (n != 9999)
+    if (suma > 0)
+        println("la suma total es $suma es mayor a cero")
+    else if (suma < 0)
+        println("la suma total es $suma es menor que cero")
+    else
+        println("la suma total es cero")
+}
+
+
+Práctica 46.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    // implementacion de bucle do while para clasificar los tipos de cuenta de un banco
+    // hasta que el usuario introduce un numero negativo en el numero de cuenta
+    // y calcula de la suma total de los acreedores
+    var sumaAcreedores = 0
+    do {
+        println("Introducir numero de cuenta, numero negativo para terminar:")
+        val numeroCuenta = readLine()!!.toInt()
+        if (numeroCuenta >= 0) {
+            println("Introducir saldo de la cuenta:")
+            val saldo = readLine()!!.toInt()
+            if (saldo > 0) {
+                println("la cuenta es de tipo 'Acreedor'")
+                sumaAcreedores += saldo
+            } else if (saldo < 0)
+                println("la cuenta es de tipo 'Deudor'")
+            else
+                println("la cuenta es de tipo 'Nulo'")
+        }
+    } while (numeroCuenta >= 0)
+    println("la suma total del saldo de los acreedores es  $sumaAcreedores")
+}
+
+
+Práctica 47.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //impresion de los numeros del 1 al 100 mediante for y operador de rango
+    for (i in 1..100)
+        println(i)
+}
+
+
+Práctica 48.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //calculo de la suma y el promedio de 10 numeros introducidos por consola
+    // mediante for y operador de rango
+    var suma= 0
+    for (i in 1..10){
+        println("introducir valor numero $i:")
+        suma += readLine()!!.toInt()
+    }
+    println("la suma es $suma")
+    println("el promedio es ${suma.toFloat()/10}")
+}
+
+
+Práctica 49.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //conteo de notas de 10 alumnos introducidos por consola y clasificacion
+    // mediante for y operador de rango
+    var notasMayoresA7= 0
+    for (i in 1..10){
+        println("introducir nota numero $i:")
+        val nota = readLine()!!.toInt()
+        if (nota >= 7)
+            notasMayoresA7++
+    }
+    println("hay $notasMayoresA7 notas mayores o iguales a 7")
+    println("hay ${10-notasMayoresA7} notas menores a 7")
+}
+
+
+Práctica 50.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //conteo de los multiples de 3, 5 y 9 entre el 1 y el 10000
+    //mediante for y operador de rango
+    var multiples3 = 0
+    var multiples5 = 0
+    var multiples9 = 0
+    for (i in 1..10000) {
+        if (i % 3 == 0)
+            multiples3++
+        if (i % 5 == 0)
+            multiples5++
+        if (i % 9 == 0)
+            multiples9++
+    }
+    println("hay $multiples3 multiples de 3.")
+    println("hay $multiples5 multiples de 5.")
+    println("hay $multiples9 multiples de 9.")
+}
+
+
+Práctica 51.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //conteo de n numeros pares introducidos por consola
+    //mediante for y operador de rango
+    println("introducir numero de valores a introducir:")
+    val nValores = readLine()!!.toInt()
+    var nPares= 0
+    for (i in 1..nValores){
+        println("introducir valor numero $i:")
+        val n = readLine()!!.toInt()
+        if (n % 2 == 0)
+            nPares++
+    }
+    println("hay $nPares numeros pares")
+}
+
+
+Práctica 52.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //Introduccion de n triangulos(especificado por consola), su respectiva base y altura
+    //calculo de su superficie y conteo de triangulos con superficie mayor a 12
+    println("introducir numero de triangulos a ingresar:")
+    val nTriangulos = readLine()!!.toInt()
+    var superficiesGrandes = 0
+    for (i in 1..nTriangulos){
+        println("introducir base triangulo numero $i:")
+        val base = readLine()!!.toInt()
+        println("introducir altura triangulo numero $i:")
+        val altura = readLine()!!.toInt()
+        val superficie = (base*altura).toFloat()/2
+        if (superficie > 12)
+            superficiesGrandes++
+        println("triangulo con base: $base, altura: $altura y superficie: $superficie")
+    }
+    println("Hay $superficiesGrandes triangulos con superficie mayor a 12.")
+}
+
+
+Práctica 53.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //introduccion de 10 valores por consola y suma de los 5 ultimos
+    var suma = 0
+    for (i in 1..10) {
+        println("introducir valor numero $i:")
+        val n = readLine()!!.toInt()
+        if (i > 5)
+            suma += n
+    }
+    println("la suma de los 5 ultimos numeros es: $suma")
+}
+
+
+Práctica 54.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //impresion de la tabla de multiplicar de 5
+    for (i in 1..10)
+        println("5 * $i = ${5 * i}")
+}
+
+
+
+Práctica 55.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //impresion de la tabla de multiplicar de un numero introducido por consola
+    //hasta multiplicarlo por 12
+    println("introducir valor(1-10) para mostrar tabla de multiplicar")
+    val n = readLine()!!.toInt()
+    for (i in 1..12)
+        println("$n * $i = ${n * i}")
+}
+
+
+Práctica 56.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //Introduccion de n triangulos(especificado por consola), sus respectivos lados
+    //mostrar tipo de triangulo y conteo de tipos de triangulos
+    println("introducir numero de triangulos a ingresar:")
+    val nTriangulos = readLine()!!.toInt()
+    var tEquilateros = 0
+    var tIsosceles = 0
+    var tEscaleno = 0
+    for (i in 1..nTriangulos) {
+        println("introducir primer lado del triangulo numero $i:")
+        val lado1 = readLine()!!.toInt()
+        println("introducir segundo lado del triangulo numero $i:")
+        val lado2 = readLine()!!.toInt()
+        println("introducir tercer lado del triangulo numero $i:")
+        val lado3 = readLine()!!.toInt()
+
+        if (lado1 == lado2 && lado1 == lado3) {
+            println("triangulo equilatero.")
+            tEquilateros++
+        } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+            println("triangulo isosceles")
+            tIsosceles++
+        } else {
+            println("triangulo escaleno")
+            tEscaleno++
+        }
+    }
+    println("Hay $tEquilateros triangulos equilateros, $tIsosceles triangulos isosceles y $tEscaleno triangulos escalenos,")
+}
+
+
+Práctica 57.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //Introduccion de n puntos(x,y) (especificado por consola), sus respectivas coordenadas
+    //y clasificacion y conteo por cuadrantes
+    println("introducir numero de puntos a ingresar:")
+    val nPuntos = readLine()!!.toInt()
+    var q1 = 0
+    var q2 = 0
+    var q3 = 0
+    var q4 = 0
+    for (i in 1..nPuntos) {
+        println("introducir x del punto numero $i:")
+        val x = readLine()!!.toInt()
+        println("introducir y del punto numero $i:")
+        val y = readLine()!!.toInt()
+
+        if (x > 0 && y > 0) {
+            println("primer cuadrante")
+            q1++
+        } else if (x < 0 && y > 0) {
+            println("segundo cuadrante")
+            q2++
+        } else if (x < 0 && y < 0) {
+            println("tercer cuadrante")
+            q3++
+        } else {
+            println("cuarto cuadrante")
+            q4++
+        }
+    }
+    println("Hay $q1 puntos en el primer cuadrante.")
+    println("Hay $q2 puntos en el segundo cuadrante.")
+    println("Hay $q3 puntos en el tercer cuadrante.")
+    println("Hay $q4 puntos en el cuarto cuadrante.")
+}
+
+
+Práctica 58.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //introduccion de 10 valores por consola y conteo de numeros negativos, numeros positivos,
+    // numeros multiples de 15 y calculo del valor acumulado de los numeros pares
+    var nNeg = 0
+    var nPos = 0
+    var nMult15 = 0
+    var sumaPares = 0
+    for (i in 1..10) {
+        println("introducir valor numero $i:")
+        val n = readLine()!!.toInt()
+        if (n > 0)
+            nPos++
+        else if (n < 0)
+            nNeg++
+        if (n % 15 == 0)
+            nMult15++
+        if (n % 2 == 0)
+            sumaPares += n
+    }
+    println("Hay $nNeg numeros negativos")
+    println("Hay $nPos numeros positivos")
+    println("Hay $nMult15 numeros multiples de 15")
+    println("El valor acumulado de los numeros pares es: $sumaPares")
+}
+
+
+Práctica 59.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //clasificacion de un punto(x,y) en su correspondiente cuadrante
+    //mediante estructura condicional when
+    println("introducir x:")
+    val x = readLine()!!.toInt()
+    println("introducir y:")
+    val y = readLine()!!.toInt()
+    when{
+        x > 0 && y > 0 -> println("primer cuadrante")
+        x < 0 && y > 0 -> println("segundo cuadrante")
+        x < 0 && y < 0 -> println("tercer cuadrante")
+        x > 0 && y < 0 -> println("cuarto cuadrante")
+        else -> println("punto situado en un eje")
+    }
+}
+
+
+Práctica 60.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte3 completado`
+
+fun main() {
+    //clasificacion de la media de las notas de un alumno
+    //mediante estructura condicional when
+    println("introducir primera nota")
+    val nota1 = readLine()!!.toInt()
+    println("introducir segunda nota")
+    val nota2 = readLine()!!.toInt()
+    println("introducir tercera nota")
+    val nota3 = readLine()!!.toInt()
+    val promedio = (nota1 + nota2 + nota3)/3
+    when{
+        promedio >= 7 -> println("Promocionado")
+        promedio in 4..6 -> println("Regular")
+        promedio < 4 -> println("Reprobado")
+    }
+}
+
+
+Práctica 61.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+
+fun main() {
+    //clasificacion de n piezas (introduccion por consola hasta ingresar el valor 0)
+    //mediante estructura condicional when
+    var pGrandes = 0
+    var pMedianas = 0
+    var pPequenas = 0
+    var nPiezas = 0
+    do{
+        println("introducir peso de la pieza")
+        val peso = readLine()!!.toFloat()
+        if (peso > 0f){
+            nPiezas++
+            when{
+                peso > 10.2f -> pGrandes++
+                peso < 9.8f -> pPequenas++
+                else -> pMedianas++
+            }
+        }
+    }while (peso != 0f)
+    println("Hay $pGrandes piezas Grandes")
+    println("Hay $pMedianas piezas Medianas")
+    println("Hay $pPequenas piezas Pequeñas")
+    println("Hay $nPiezas piezas totales")
+}
+
+
+Práctica 62.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+
+fun main() {
+    //clasificacion de los sueldos de 10 empleados introducidos por pantalla
+    //y calculo del valor acumulado de los sueldos altos mediante estructura condicional when
+    var sumaSueldosAltos = 0
+    for (i in 1..10) {
+        println("introducir sueldo empleado  numero $i:")
+        val sueldo = readLine()!!.toInt()
+        when {
+            sueldo > 5000 -> {
+                println("sueldo alto")
+                sumaSueldosAltos += sueldo
+            }
+            sueldo < 2000 -> println("sueldo bajo")
+            else -> println("sueldo medio")
+        }
+    }
+    println("valor acumulado de los sueldos altos: $sumaSueldosAltos")
+}
+
+
+Práctica 63.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+
+fun main() {
+    //clasificacion de un numero entero introducido por pantalla
+    //mediante estructura condicional when
+    println("introducir valor:")
+    val n = readLine()!!.toInt()
+    when{
+        n > 0 -> println("positivo")
+        n < 0 -> println("negativo")
+        else -> println("nulo")
+    }
+}
+
+
+Práctica 64.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+
+fun main() {
+    //calculo del valor acumulado de los numeros mas mayores introducidos
+    //con cada iteracion del bucle
+    var sumaMayores = 0
+    for (i in 1..5) {
+        println("introducir primer numero($i):")
+        val n1 = readLine()!!.toInt()
+        println("introducir segundo numero($i):")
+        val n2 = readLine()!!.toInt()
+        println("introducir tercer numero($i):")
+        val n3 = readLine()!!.toInt()
+
+        if (n1 > n2 && n1 > n3)
+            sumaMayores += n1
+        else if (n2 > n3)
+            sumaMayores += n2
+        else {
+            sumaMayores += n3
+        }
+    }
+    println("El valor acumulado de los numeros mayores es $sumaMayores")
+}
+
+
+Práctica 65.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+
+fun main() {
+    //Introduccion de n triangulos(especificado por consola),y sus respectivos lados,
+    //mostrar tipo de triangulo y conteo de tipos de triangulos mediante estructura condicional when
+    println("introducir numero de triangulos a ingresar:")
+    val nTriangulos = readLine()!!.toInt()
+    var tEquilateros = 0
+    var tIsosceles = 0
+    var tEscaleno = 0
+    for (i in 1..nTriangulos) {
+        println("introducir primer lado del triangulo numero $i:")
+        val lado1 = readLine()!!.toInt()
+        println("introducir segundo lado del triangulo numero $i:")
+        val lado2 = readLine()!!.toInt()
+        println("introducir tercer lado del triangulo numero $i:")
+        val lado3 = readLine()!!.toInt()
+
+        when {
+            lado1 == lado2 && lado1 == lado3 -> {
+                println("triangulo equilatero.")
+                tEquilateros++
+            }
+            lado1 == lado2 || lado1 == lado3 || lado2 == lado3 -> {
+                println("triangulo isosceles")
+                tIsosceles++
+            }
+            else -> {
+                println("triangulo escaleno")
+                tEscaleno++
+            }
+        }
+    }
+    println("Hay $tEquilateros triangulos equilateros, $tIsosceles triangulos isosceles y $tEscaleno triangulos escalenos,")
+}
+
+
+Práctica 66.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+
+fun main() {
+    //impresion en letra de un numero introducido por consola (1-5)
+    //mediante estructura condicional when con argumento
+    println("Introducir valor (1-5):")
+    val n = readLine()!!.toInt()
+    when (n) {
+        1 -> print("uno")
+        2 -> print("dos")
+        3 -> print("tres")
+        4 -> print("cuatro")
+        5 -> print("cinco")
+    }
+}
+
+
+Práctica 67.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+
+fun main() {
+    //clasificacion de un numero introducido por consola segun la
+    //cantidad de digitos mediante estructura condicional when
+    //con parametro
+    println("introducir valor (1-10000):")
+    val n = readLine()!!.toInt()
+    when(n){
+         in 1..9 -> println("1 digito")
+         in 10..99 -> println("2 digitos")
+         in 100..999 -> println("3 digitos")
+         in 1000..9999 -> println("4 digitos")
+        else -> println("numero fuera de rango")
+    }
+}
+
+
+Práctica 68.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+
+fun main() {
+    //clasificacion de 10 numeros introducidos por consola en si son
+    //0 o 1,5 o 10 mediante estructura condicional when
+    //con parametro
+    var q0 = 0
+    var q15_10 = 0
+    for (i in 1..10) {
+        println("introducir valor numero $i:")
+        val n = readLine()!!.toFloat()
+        when (n) {
+            0f -> q0++
+            1.5f, 10f -> q15_10++
+        }
+    }
+    println("$q0 de los valores introducidos son 0.")
+    println("$q15_10 de los valores introducidos son 1,5 o 10.")
+}
+
+
+Práctica 69.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+
+fun main() {
+    //clasificacion de 10 familias seguno la cantidad de hijos
+    //introducidos por consola mediante estructura condicional when
+    //con parametro
+    var n0Hijos = 0
+    var n1Hijos = 0
+    var n2Hijos = 0
+    var nMasHijos = 0
+    for (i in 1..10) {
+        println("introducir cantidad de hijos familia numero $i:")
+        val nHijos = readLine()!!.toInt()
+        when (nHijos) {
+            0 -> n0Hijos++
+            1 -> n1Hijos++
+            2 -> n2Hijos++
+            else -> nMasHijos++
+        }
+    }
+    println("hay $n0Hijos familias con 0 hijos.")
+    println("hay $n1Hijos familias con 1 hijo.")
+    println("hay $n2Hijos familias con 2 hijos.")
+    println("hay $nMasHijos familias con mas de 2 hijos.")
+}
+
+
+Práctica 70.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+//programa que permite mostrar la suma de dos valores introducidos
+//por pantalla mediante funciones
+fun main() {
+    presentacion()
+    suma()
+    despedida()
+}
+//funcion para mostrar mensaje de presentacion
+fun presentacion() {
+    println("programa que muestra la suma de dos valores introducidos por pantalla.")
+}
+//funcion para recoger los valores a sumar y mostrar el resultado
+fun suma() {
+    println("introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("$n1 + $n2 = ${n1 + n2}")
+}
+//funcion para mostrar mensaje de despedida
+fun despedida(){
+    println("fin del programa")
+}
+
+
+Práctica 71.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+//programa que permite mostrar 5 sumas de dos valores introducidos
+//por pantalla mediante funciones
+fun main() {
+    for (i in 1..5){
+        suma2()
+        crearSeparacion()
+    }
+}
+//funcion para recoger los valores a sumar y mostrar el resultado
+fun suma2() {
+    println("introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("$n1 + $n2 = ${n1 + n2}")
+}
+//funcion para imprimir separacion
+fun crearSeparacion(){
+    println("------------------------")
+}
+
+
+Práctica 72.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+//programa que permite mostrar la multiplicacion de dos valores introducidos
+//por pantalla y el cuadrado de otro mediante funciones
+fun main() {
+    producto()
+    cuadrado()
+}
+
+//funcion para recoger los valores a multiplicar y mostrar el resultado
+fun producto() {
+    println("introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("$n1 * $n2 = ${n1 * n2}")
+}
+
+//funcion para calcular el cuadrado de un valor
+fun cuadrado() {
+    println("introducir valor:")
+    val n = readLine()!!.toInt()
+    println("$n^2 = ${n * n}")
+}
+
+
+Práctica 73.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+//programa que permite mostrar el numero menor de tres valores introducidos
+//por pantalla mediante funciones
+fun main() {
+    menorDeTres()
+    menorDeTres()
+}
+//funcion para mostrar por pantalla el numero menor de tres valores introducidos
+fun menorDeTres(){
+    println("introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("introducir tercer valor:")
+    val n3 = readLine()!!.toInt()
+    if (n1 < n2 && n1 < n3)
+        println("el menor es $n1.")
+    else if (n2 < n3)
+        println("el menor es $n2.")
+    else
+        println("el menor es $n3.")
+}
+
+
+Práctica 74.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+//programa que permite mostrar la suma de dos valores introducidos
+//por pantalla mediante funciones
+fun main() {
+    presentacion2("programa que muestra la suma de dos valores introducidos por pantalla.")
+    suma3()
+    despedida2()
+}
+//funcion para mostrar mensaje de presentacion introducido por parametro
+fun presentacion2(mensaje : String) {
+    println(mensaje)
+}
+//funcion para recoger los valores a sumar y mostrar el resultado
+fun suma3() {
+    println("introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("$n1 + $n2 = ${n1 + n2}")
+}
+//funcion para mostrar mensaje de despedida
+fun despedida2(){
+    println("fin del programa")
+}
+
+
+Práctica 75.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+
+//programa que permite mostrar el numero mayor de tres valores introducidos
+//por pantalla mediante funciones
+fun main() {
+    println("introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("introducir tercer valor:")
+    val n3 = readLine()!!.toInt()
+    mayorDeTres(n1,n2,n3)
+}
+//funcion para mostrar por pantalla el numero mayor de tres valores introducidos
+//por parametro
+fun mayorDeTres(n1: Int, n2: Int, n3: Int) {
+    if (n1 > n2 && n1 > n3)
+        println("el mayor es $n1.")
+    else if (n2 > n3)
+        println("el mayor es $n2.")
+    else
+        println("el mayor es $n3.")
+}
+
+
+Práctica 76.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+
+fun main() {
+    //programa que permite cargar el lado de un cuadrado y la decision
+    //de mostrar el area o el perimetro
+    println("Introducir lado cuadrado:")
+    val lado = readLine()!!.toInt()
+    println("¿Que quieres calcular? perimetro(p) o superficie(s):")
+    when(readLine()!!.toString()){
+        "p" -> perimetro(lado)
+        "s" -> superficie(lado)
+        else -> println("respuesta no valida")
+    }
+}
+//funcion para calcular el perimetro de un cuadrado con lado introducido por parametro
+fun perimetro(lado: Int) {
+    println("el perimetro del cuadrado con lado $lado es : ${lado * 4}")
+}
+//funcion para calcular la superficie de un cuadrado con lado introducido por parametro
+fun superficie(lado: Int) {
+    println("la superficie del cuadrado con lado $lado es : ${lado * lado}")
+}
+
+
+
+Práctica 77.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+//introduccion de dos cadenas por pantalla y comparacion mediante funcion
+fun main() {
+    println("Introducir primera cadena:")
+    val str1 = readLine()!!.toString()
+    println("Introducir segunda cadena:")
+    val str2 = readLine()!!.toString()
+    compararString(str1,str2)
+}
+//funcion para mostrar un mensaje de si dos cadenas ingresadas
+//por parametro son iguales o no
+fun compararString(str1 : String,str2 : String){
+    if (str1 == str2)
+        println("cadenas iguales.")
+    else{
+        println("cadenas diferentes.")
+    }
+}
+
+
+Práctica 78.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+//ordenacion de tres numeros introducidos por consola mediante metodo
+fun main() {
+    println("Introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("Introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("Introducir tercer valor:")
+    val n3 = readLine()!!.toInt()
+    ordenarMayorAMenor(n1,n2,n3)
+}
+//funcion para ordenar tres numeros pasados por parametro de mayor a menor
+fun ordenarMayorAMenor(n1: Int,n2: Int,n3: Int){
+    if (n1 > n2 && n1 > n3){
+        if (n2 > n3)
+            println("$n1,$n2,$n3")
+        else
+            println("$n1,$n3,$n2")
+
+    }else if (n2 > n3){
+        if (n1>n3)
+            println("$n2,$n1,$n3")
+        else
+            println("$n2,$n3,$n1")
+    }else{
+        if (n1>n2)
+            println("$n3,$n1,$n2")
+        else
+            println("$n3,$n2,$n1")
+    }
+}
+
+
+Práctica 79.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+//calculo de la superficie de un cuadrado mediante metodo
+fun main() {
+    println("introducir lado cuadrado:")
+    val lado = readLine()!!.toInt()
+    println("La superficie del cuadrado es ${superficie2(lado)}")
+}
+//funcion que devuelve la superficie de un cuadrado de lado introducido por parametro
+fun superficie2(lado: Int): Int {
+    return lado * lado
+}
+
+
+Práctica 80.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte4 completado`
+//programa para mostrar el numero mayor de dos introducidos por consola
+//mediante funcion
+fun main() {
+    println("Introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("Introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("el mayor es: ${mayorDe(n1,n2)}")
+}
+
+//funcion para calcular el numero mayor de los pasados por parametro
+fun mayorDe(n1: Int, n2: Int): Int {
+    return when {
+        n1 > n2 -> n1
+        else -> n2
+    }
+}
+
+
+Práctica 81.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+//programa para mostrar el numero de caracteres de dos strings introducidas
+//por consola e impresion de la mayor mediante funcion
+fun main() {
+    println("Introducir primera cadena:")
+    val str1 = readLine()!!.toString()
+    println("Introducir segunda cadena:")
+    val str2 = readLine()!!.toString()
+    println("$str1 tiene ${numeroDeCaracteres(str1)} caracteres")
+    println("$str2 tiene ${numeroDeCaracteres(str2)} caracteres")
+
+    if (numeroDeCaracteres(str1) > numeroDeCaracteres(str2))
+        println("$str1 es mayor")
+    else if (numeroDeCaracteres(str1) < numeroDeCaracteres(str2))
+        println("$str2 es mayor")
+    else
+        println("las dos cadenas tienen el mismo numero de caracteres.")
+}
+
+//funcion para calcular el numero de caracteres de un string
+//pasado por parametro
+fun numeroDeCaracteres(str :String): Int {
+    return str.length
+}
+
+
+
+Práctica 82.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+//programa para mostrar el promedio de tres numeros introducidos por consola
+//mediante funcion
+fun main() {
+    println("Introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("Introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("Introducir tercer valor:")
+    val n3 = readLine()!!.toInt()
+    println("el promedio es: ${promedioDe3(n1,n2,n3)}")
+}
+
+//funcion para calcular el promedio de los numeros pasados por parametro
+fun promedioDe3(n1: Int, n2: Int, n3: Int): Float {
+    return (n1+n2+n3).toFloat()/3
+}
+
+
+Práctica 83.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+
+//calculo del perimetro de un cuadrado mediante metodo
+fun main() {
+    println("introducir lado cuadrado:")
+    val lado = readLine()!!.toInt()
+    println("el perimetro del cuadrado es ${perimetro(lado)}")
+}
+//funcion que devuelve el perimetro de un cuadrado de lado introducido por parametro
+fun perimetro(lado: Int): Int {
+    return lado * 4
+}
+
+
+Práctica 84.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+//calculo del rectangulo con mayor superficie de los introducidos por consola
+//mediante funciones
+fun main() {
+    println("Introducir base primer rectangulo:")
+    val base1 = readLine()!!.toInt()
+    println("Introducir altura primer rectangulo:")
+    val altura1 = readLine()!!.toInt()
+    println("Introducir base segundo rectangulo:")
+    val base2 = readLine()!!.toInt()
+    println("Introducir altura segundo rectangulo:")
+    val altura2 = readLine()!!.toInt()
+
+    when {
+        superficieRectangulo(base1, altura1) > superficieRectangulo(base2, altura2) -> {
+            println("el primer rectangulo tiene mas superficie")
+        }
+        superficieRectangulo(base1, altura1) < superficieRectangulo(base2, altura2) -> {
+            println("el primesegundo rectangulo tiene mas superficie")
+        }
+        else -> println("los dos rectangulos tienen las misma superficie")
+    }
+}
+//funcion para calcular la superficie de un rectangulo
+fun superficieRectangulo(base: Int, altura: Int): Int {
+    return base * altura
+}
+
+
+Práctica 85.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+//calculo de la superficie de un cuadrado mediante
+//funcion con unica expresion
+fun main() {
+    println("introducir lado cuadrado:")
+    val lado = readLine()!!.toInt()
+    println("la superficie del cuadrado es ${superficie(lado)}")
+}
+
+//funcion con unica expresion para calcular la superficie de un cuadrado
+fun superficie(lado: Int) = lado * lado
+
+
+Práctica 86.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+//calculo de el numero mayor de dos valores introducidos por consola mediante
+//funcion con unica expresion
+fun main() {
+    println("Introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("Introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("el mayor es: ${mayorDe(n1,n2)}")
+}
+//funcion con unica expresion para calcular el numero mayor de dos introducidos por parametro
+fun mayorDe(n1: Int, n2: Int) = if (n1 > n2) n1 else n2
+
+
+Práctica 87.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+
+//transformacion de un numero a letra mediante funcion
+fun main() {
+    println("Introducir valor (1-5):")
+    val n = readLine()!!.toInt()
+    println(numeroALetra(n))
+}
+
+//funcion para transformar un numero a letra mediante unica expresion
+fun numeroALetra(n: Int) = when (n) {
+    1 -> "uno"
+    2 -> "dos"
+    3 -> "tres"
+    4 -> "cuatro"
+    5 -> "cinco"
+    else -> "numero no valido"
+}
+
+
+Práctica 88.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+//programa para mostrar el promedio de tres numeros introducidos por consola
+//mediante funcion con unica expresion
+fun main() {
+    println("Introducir primer valor:")
+    val n1 = readLine()!!.toInt()
+    println("Introducir segundo valor:")
+    val n2 = readLine()!!.toInt()
+    println("Introducir tercer valor:")
+    val n3 = readLine()!!.toInt()
+    println("el promedio es: ${promedioDe3_2(n1,n2,n3)}")
+}
+
+//funcion con unica expresion para calcular el promedio de los numeros pasados por parametro
+fun promedioDe3_2(n1: Int, n2: Int, n3: Int) = (n1+n2+n3).toFloat()/3
+
+
+Práctica 89.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+
+//calculo del perimetro de un cuadrado mediante metodo con unica expresion
+fun main() {
+    println("introducir lado cuadrado:")
+    val lado = readLine()!!.toInt()
+    println("el perimetro del cuadrado es ${perimetro2(lado)}")
+}
+
+//funcion con unica expresion que devuelve el perimetro de un cuadrado de lado introducido por parametro
+fun perimetro2(lado: Int) = lado * 4
+
+
+
+Práctica 90.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+
+//calculo del rectangulo con mayor superficie de los introducidos por consola
+//mediante funcion con unica expresion
+fun main() {
+    println("Introducir base primer rectangulo:")
+    val base1 = readLine()!!.toInt()
+    println("Introducir altura primer rectangulo:")
+    val altura1 = readLine()!!.toInt()
+    println("Introducir base segundo rectangulo:")
+    val base2 = readLine()!!.toInt()
+    println("Introducir altura segundo rectangulo:")
+    val altura2 = readLine()!!.toInt()
+
+    when {
+        superficieRectangulo2(base1, altura1) > superficieRectangulo2(base2, altura2) -> {
+            println("el primer rectangulo tiene mas superficie")
+        }
+        superficieRectangulo2(base1, altura1) < superficieRectangulo2(base2, altura2) -> {
+            println("el primesegundo rectangulo tiene mas superficie")
+        }
+        else -> println("los dos rectangulos tienen las misma superficie")
+    }
+}
+
+//funcion con unica expresion para calcular la superficie de un rectangulo
+fun superficieRectangulo2(base: Int, altura: Int) = base * altura
+
+
+
+Práctica 91.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+//programa para mostrar el numero de caracteres de dos strings introducidas
+//por consola e impresion de la mayor mediante funcion con unica expresion
+fun main() {
+    println("Introducir primera cadena:")
+    val str1 = readLine()!!.toString()
+    println("Introducir segunda cadena:")
+    val str2 = readLine()!!.toString()
+    println("$str1 tiene ${numeroDeCaracteres2(str1)} caracteres")
+    println("$str2 tiene ${numeroDeCaracteres2(str2)} caracteres")
+
+    if (numeroDeCaracteres2(str1) > numeroDeCaracteres2(str2))
+        println("$str1 es mayor")
+    else if (numeroDeCaracteres2(str1) < numeroDeCaracteres2(str2))
+        println("$str2 es mayor")
+    else
+        println("las dos cadenas tienen el mismo numero de caracteres.")
+}
+
+//funcion con unica expresion para calcular el numero de caracteres de un string
+//pasado por parametro
+fun numeroDeCaracteres2(str :String) = str.length
+
+
+
+Práctica 92.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+//impresion de una cadena pasada por parametro con subrallado
+fun main() {
+    println("Introducir cadena:")
+    val str = readLine()!!.toString()
+    println("Introducir subrallado:")
+    val sub = readLine()!!.toString()
+    imprimirYSubrayar(str,sub)
+}
+//funcion para imprimir un texto con subrallado predeterminado o personalizado
+fun imprimirYSubrayar(str :String,subrallado :String = "-"){
+    println(str)
+    for (i in 1..str.length step subrallado.length)
+        print(subrallado)
+}
+
+
+Práctica 93.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+
+//programa con funcion que permite sumar de 2 a 5 enteros mediante variables opcionales
+fun main() {
+    println("la suma de 2 + 3 = ${sumar(2, 3)}")
+    println("la suma de 2 + 3 + 4 + 5 = ${sumar(2, 3, 4, 5)}")
+}
+
+//funcion para sumar de 2 a 5 enteros
+fun sumar(n1: Int, n2: Int, n3: Int = 0, n4: Int = 0, n5: Int = 0) = n1 + n2 + n3 + n4 + n5
+
+
+Práctica 94.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+
+//programa para mostrar el salario de un empleado introducido por consola
+//mediante argumentos nombrados
+fun main() {
+    println("Introducir nombre operario:")
+    val nombre = readLine()!!.toString()
+    println("Introducir pago por hora:")
+    val pago = readLine()!!.toInt()
+    println("Introducir cantidad de horas trabajadas:")
+    val horas = readLine()!!.toInt()
+    sueldo(nombre = nombre, horas = horas , pagoHora = pago)
+}
+//funcion para mostrar el nombre y el salario de un trabajador
+fun sueldo(nombre: String, pagoHora: Int, horas: Int) {
+    println("nombre: $nombre, salario: ${pagoHora * horas}")
+}
+
+
+Práctica 95.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+
+//programa para mostrar la tabla de multiplicar
+//mediante argumentos nombrados
+fun main() {
+    val n = 7
+    val termino = 56
+    tablaDeMultiplicar(n = n, termino = termino)
+}
+
+//funcion que calcula la tabla de multiplicar con atributo opcional
+fun tablaDeMultiplicar(n: Int, termino: Int = 10) {
+    for (i in 0..termino)
+        println("$n * $i = ${n * i}")
+}
+
+
+Práctica 96.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+fun main() {
+    multiplosDe2y5()
+}
+
+//funcion que pide 10 numeros y cuenta los multiplos de 2 y de 5
+//mediante funcion interna
+fun multiplosDe2y5() {
+    fun multiplo(multiplo: Int, n: Int) = multiplo % n == 0
+    var mult2 = 0
+    var mult5 = 0
+    for (i in 1..10) {
+        println("introducir valor $i:")
+        val n = readLine()!!.toInt()
+        if (multiplo(n, 2))
+            mult2++
+        if (multiplo(n, 5))
+            mult5++
+    }
+    println("hay $mult2 multiples de 2")
+    println("hay $mult5 multiples de 5")
+}
+
+
+Práctica 97.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+
+fun main() {
+    mayorDe2_5veces()
+}
+
+//funcion que pide 2 numeros 5 veces y muestra el mayor
+//mediante funcion interna
+fun mayorDe2_5veces() {
+    fun mayorDe(n1: Int, n2: Int) = if (n1 > n2) n1 else n2
+    for (i in 1..5) {
+        println("introducir primer valor $i:")
+        val n1 = readLine()!!.toInt()
+        println("introducir segundo valor $i:")
+        val n2 = readLine()!!.toInt()
+        println("el mayor es ${mayorDe(n1,n2)}")
+    }
+}
+
+
+Práctica 98.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+//programa que permite llenar un array por consola y mostrarlo
+//posteriormente
+fun main() {
+    val sueldos = IntArray(5)
+    for (i in 0..4) {
+        println("introducir sueldo numero ${i + 1}")
+        sueldos[i] = readLine()!!.toInt()
+    }
+    for (i in sueldos)
+        println(i)
+}
+
+
+Práctica 99.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+
+//programa que permite llenar un array por consola con alturas
+//posteriormente mostrar el promedio y las alturas superiores e inferiores a el
+fun main() {
+    val alturas = FloatArray(5)
+    var sumaAlturas = 0f
+    for (i in 0..4) {
+        println("introducir altura numero ${i + 1}")
+        val altura = readLine()!!.toFloat()
+        alturas[i] = altura
+        sumaAlturas += altura
+    }
+    val promedio = sumaAlturas / 5
+    var masPrmd = 0
+    var menosPrmd = 0
+    println("El promedio es: $promedio")
+    for (i in alturas){
+        if (i > promedio)
+            masPrmd++
+        else if (i < promedio)
+            menosPrmd++
+    }
+    println("Hay $masPrmd personas por encima del promedio")
+    println("Hay $menosPrmd personas por debajo del promedio")
+}
+
+
+Práctica 100.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte5 completado`
+
+//programa que permite llenar un array por consola y mostrar si esta ordenado
+//de menor a mayor
+fun main() {
+    val valores = IntArray(10)
+    for (i in 0..9) {
+        println("introducir numero ${i + 1}")
+        valores[i] = readLine()!!.toInt()
+    }
+    var ordenado = true
+    for (i in 1..9) {
+        if (valores[i - 1] > valores[i])
+            ordenado = false
+    }
+    if (ordenado)
+        println("el array esta ordenado")
+    else
+        println("el array no esta ordenado")
+}
+
+
+Práctica 101.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//programa que permite llenar un array por consola y mostrar el primer y ultimo
+//elemento
+fun main() {
+    val valores = IntArray(10)
+    for (i in 0..9) {
+        println("introducir numero ${i + 1}")
+        valores[i] = readLine()!!.toInt()
+    }
+    println("El primer elemento es ${valores[0]}")
+    println("El ultimo elemento es ${valores[valores.size-1]}")
+}
+
+
+Práctica 102.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//programa que permite llenar un array por consola y mostrar los
+//elementos posteriormente
+fun main() {
+    val valores = IntArray(5)
+    for (i in 0..4) {
+        println("introducir numero ${i + 1}")
+        valores[i] = readLine()!!.toInt()
+    }
+    for (e in valores)
+        println(e)
+}
+
+
+Práctica 103.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//programa que permite llenar un array por consola y mostrar el valor acumulado,
+//el valor acumulado de los numeros mayores a 36 y los numeros mayores a 50
+fun main() {
+    val valores = IntArray(8)
+    for (i in 0..7) {
+        println("introducir numero ${i + 1}")
+        valores[i] = readLine()!!.toInt()
+    }
+    var acumulado = 0
+    var acumulado36 = 0
+    var nMayores50 = 0
+    for (e in valores) {
+        acumulado += e
+        if (e > 36)
+            acumulado36 += e
+        if (e > 50)
+            nMayores50++
+    }
+}
+
+
+Práctica 104.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//programa que permite llenar dos arrays por consola e introducir en un tercer array
+//el resultado de la suma de los valores de las mismas posiciones de los dos
+//primeros arrays
+fun main() {
+    val valores1 = IntArray(4)
+    for (i in 0..3) {
+        println("introducir numero ${i + 1} del primer array")
+        valores1[i] = readLine()!!.toInt()
+    }
+    val valores2 = IntArray(4)
+    for (i in 0..3) {
+        println("introducir numero ${i + 1} del segundo array")
+        valores2[i] = readLine()!!.toInt()
+    }
+    val valoresSuma = IntArray(4)
+    for (i in 0..3) {
+        valoresSuma[i] = valores1[i] + valores2[i]
+    }
+}
+
+
+Práctica 105.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//carga e impresion de un array mediante funciones
+fun main() {
+    val valores = IntArray(5)
+    llenarArray(valores)
+    imprimirArray(valores)
+}
+
+fun llenarArray(array: IntArray) {
+    for (i in array.indices) {
+        println("Ingresar valor numero $i:")
+        array[i] = readLine()!!.toInt()
+    }
+}
+
+fun imprimirArray(array: IntArray) {
+    for (e in array)
+        println(e)
+}
+
+
+
+Práctica 106.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//carga e impresion de un array de sueldos de cantidad
+//cargada por consola mediante funciones
+fun main() {
+    println("cantidad de sueldos a intruducir:")
+    val nSueldos = readLine()!!.toInt()
+    val sueldos = IntArray(nSueldos)
+    llenarArray(sueldos)
+    imprimirArray(sueldos)
+}
+//funcion para llenar los sueldos
+fun llenarSueldos(array: IntArray) {
+    for (i in array.indices) {
+        println("Ingresar sueldo numero $i:")
+        array[i] = readLine()!!.toInt()
+    }
+}
+//funcion para imprimir los sueldos
+fun imprimirSueldos(array: IntArray) {
+    for (i in array.indices)
+        println("sueldo numero $i: ${array[i]}")
+}
+
+
+
+Práctica 107.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//carga e impresion de la suma de los valores de un array de cantidad
+//cargada por consola mediante funciones
+fun main() {
+    println("tamaño del array:")
+    val tamano = readLine()!!.toInt()
+    val array = crearArray(tamano)
+    val suma = sumarArray(array)
+    println("la suma del array es $suma")
+}
+//funcion para crear y llenar el array
+fun crearArray(tamano: Int): IntArray {
+    val array = IntArray(tamano)
+    for (i in array.indices) {
+        println("Ingresar valor numero $i:")
+        array[i] = readLine()!!.toInt()
+    }
+    return array
+}
+//funcion para sumar los valores de un array
+fun sumarArray(array: IntArray): Int {
+    var suma = 0
+    for (i in array.indices)
+        suma += array[i]
+    return suma
+}
+
+
+
+Práctica 108.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//carga de un array de cantidad
+//cargada por consola e impresion del valor menor y si se repite o no
+//mediante funciones
+fun main() {
+    println("tamaño del array:")
+    val tamano = readLine()!!.toInt()
+    val array = crearArray(tamano)
+    val nMenor = numeroMenor(array)
+    println("el numero menor es $nMenor")
+    if (numeroMenorSeRepite(array))
+        println("el numero menor se repite")
+    else
+        println("el numero menor no se repite")
+}
+
+//funcion para encontrar el numero menor de un array
+fun numeroMenor(array: IntArray): Int {
+    var nMenor = array[0]
+    for (i in array.indices) {
+        if (array[i] < nMenor)
+            nMenor = array[i]
+    }
+    return nMenor
+}
+
+//funcion para ver si el numero menor de un array se repite
+fun numeroMenorSeRepite(array: IntArray): Boolean {
+    var nMenor = numeroMenor(array)
+    var nVeces = 0
+    for (i in array.indices){
+        if (nMenor == array[i])
+            nVeces++
+        if (nVeces>1)
+            return true
+    }
+    return false
+}
+
+
+
+Práctica 109.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//creacion de un objeto persona con nombre y edad y utilizacion de sus funciones
+fun main() {
+    val persona = Persona()
+    persona.inicializar("Juan",23)
+    persona.imprimir()
+    persona.esMayorEdad()
+}
+
+class Persona {
+    private var nombre: String = ""
+    private var edad: Int = 0
+//inicializadro de las variables de clase
+    fun inicializar(nombre: String, edad: Int) {
+        this.nombre = nombre
+        this.edad = edad
+    }
+//funcion para imprimir el objeto
+    fun imprimir() {
+        println("Nombre: $nombre, edad:$edad")
+    }
+//funcion para comprobar que es mayor de edad
+    fun esMayorEdad() {
+        if (edad >= 18)
+            println("mayor de edad")
+        else
+            println("menor de edad")
+    }
+}
+
+
+Práctica 110.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//creacion de un objeto triangulo con tres lados de variable y utilizacion de sus funciones
+fun main() {
+    val triangulo = Triangulo()
+    val lado1 = 2
+    val lado2 = 4
+    val lado3 = 6
+    triangulo.inicializarTriangulo(lado1,lado2,lado3)
+    triangulo.ladoMasGrande()
+    triangulo.esEquilatero()
+
+}
+
+class Triangulo {
+    private var lado1 = 0
+    private var lado2 = 0
+    private var lado3 = 0
+
+    //inicializador de las variables de clase
+    fun inicializarTriangulo(lado1 : Int,lado2 : Int,lado3 : Int) {
+        this.lado1 = lado1
+        this.lado2 = lado2
+        this.lado3 = lado3
+    }
+
+    //funcion para imprimir el lado mas grande del objeto
+    fun ladoMasGrande() {
+        if (lado1 > lado2 && lado1 > lado3)
+            println(lado1)
+        else if (lado2 > lado3)
+            println(lado2)
+        else
+            println(lado3)
+    }
+
+    //funcion para comprobar que es mayor de edad
+    fun esEquilatero() {
+        if (lado1 == lado2 && lado2 == lado3)
+            println("es equilatero")
+        else
+            println("no es equilatero")
+    }
+}
+
+
+Práctica 111.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+
+//creacion de un objeto alumno con nombre y nota y utilizacion de sus funciones
+fun main() {
+    val persona1 = Alumno()
+    persona1.inicializar("Juan", 7)
+    persona1.imprimir()
+    persona1.estado()
+
+    val persona2 = Alumno()
+    persona2.inicializar("Pedro", 3)
+    persona2.imprimir()
+    persona2.estado()
+}
+
+class Alumno {
+    private var nombre: String = ""
+    private var nota: Int = 0
+
+    //inicializadro de las variables de clase
+    fun inicializar(nombre: String, nota: Int) {
+        this.nombre = nombre
+        this.nota = nota
+    }
+
+    //funcion para imprimir el objeto
+    fun imprimir() {
+        println("Nombre: $nombre, nota:$nota")
+    }
+
+    //funcion para comprobar si el alumno esta aprobado o suspendido
+    fun estado() {
+        if (nota >= 4)
+            println("nota aprobada")
+        else
+            println("nota suspendida")
+    }
+}
+
+
+Práctica 112.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//creacion de un objeto persona con nombre y edad y utilizacion de sus funciones
+fun main() {
+    val persona = Persona2("Juan",23)
+    persona.imprimir()
+    persona.esMayorEdad()
+}
+//clase Persona con constructor
+class Persona2 (var nombre: String,var edad: Int) {
+
+    //funcion para imprimir el objeto
+    fun imprimir() {
+        println("Nombre: $nombre, edad:$edad")
+    }
+    //funcion para comprobar que es mayor de edad
+    fun esMayorEdad() {
+        if (edad >= 18)
+            println("mayor de edad")
+        else
+            println("menor de edad")
+    }
+}
+
+
+Práctica 113.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//creacion de un objeto triangulo con tres lados de variable y utilizacion de sus funciones
+fun main() {
+    val lado1 = 2
+    val lado2 = 4
+    val lado3 = 6
+    val triangulo = Triangulo2(lado1,lado2,lado3)
+    triangulo.ladoMasGrande()
+    triangulo.esEquilatero()
+
+}
+//calse Triangulo con constructor
+class Triangulo2 (var lado1 : Int,var lado2 : Int,var lado3 : Int){
+    //funcion para imprimir el lado mas grande del objeto
+    fun ladoMasGrande() {
+        if (lado1 > lado2 && lado1 > lado3)
+            println(lado1)
+        else if (lado2 > lado3)
+            println(lado2)
+        else
+            println(lado3)
+    }
+
+    //funcion para comprobar que es mayor de edad
+    fun esEquilatero() {
+        if (lado1 == lado2 && lado2 == lado3)
+            println("es equilatero")
+        else
+            println("no es equilatero")
+    }
+}
+
+
+Práctica 114.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+
+//creacion de dos objetos triangulo con tres lados con distintos constructores de
+//variable y utilizacion de sus funciones
+fun main() {
+    val lado1 = 2
+    val lado2 = 4
+    val lado3 = 6
+    val triangulo1 = Triangulo3(lado1, lado2, lado3)
+    triangulo1.ladoMasGrande()
+    triangulo1.esEquilatero()
+    val triangulo2 = Triangulo3()
+    triangulo2.ladoMasGrande()
+    triangulo2.esEquilatero()
+}
+
+//clasee Triangulo con 2 constructores
+class Triangulo3(var lado1: Int, var lado2: Int, var lado3: Int) {
+    //segundo constructor con valores ingresados por teclado
+    constructor() : this(0, 0, 0) {
+        println("introducir lado 1:")
+        lado1 = readLine()!!.toInt()
+        println("introducir lado 2:")
+        lado2 = readLine()!!.toInt()
+        println("introducir lado 3:")
+        lado3 = readLine()!!.toInt()
+    }
+
+    //funcion para imprimir el lado mas grande del objeto
+    fun ladoMasGrande() {
+        if (lado1 > lado2 && lado1 > lado3)
+            println(lado1)
+        else if (lado2 > lado3)
+            println(lado2)
+        else
+            println(lado3)
+    }
+
+    //funcion para comprobar que es mayor de edad
+    fun esEquilatero() {
+        if (lado1 == lado2 && lado2 == lado3)
+            println("es equilatero")
+        else
+            println("no es equilatero")
+    }
+}
+
+
+Práctica 115.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//creacion de un objeto alumno con nombre y nota con constructor definido
+// y utilizacion de sus funciones
+fun main() {
+    val persona1 = Alumno2("Juan", 7)
+    persona1.imprimir()
+    persona1.estado()
+
+    val persona2 = Alumno2("Pedro", 3)
+    persona2.imprimir()
+    persona2.estado()
+}
+//clase alumno con constructor incluido
+class Alumno2 (var nombre: String,var nota: Int){
+
+    //funcion para imprimir el objeto
+    fun imprimir() {
+        println("Nombre: $nombre, nota:$nota")
+    }
+
+    //funcion para comprobar si el alumno esta aprobado o suspendido
+    fun estado() {
+        if (nota >= 4)
+            println("nota aprobada")
+        else
+            println("nota suspendida")
+    }
+}
+
+
+Práctica 116.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+
+//creacion de un objeto punto con coordenadas x e y con constructor definido
+// y utilizacion de sus funciones
+fun main() {
+    val punto = Punto(3, 7)
+    punto.cuadrante()
+}
+
+//clase punto con coordenadas x e y
+class Punto(var x: Int, var y: Int) {
+    //funcion para clasificar el punto segun su cuadrante
+    fun cuadrante() {
+        when {
+            x > 0 && y > 0 -> println("cuadrante 1")
+            x > 0 && y < 0 -> println("cuadrante 2")
+            x < 0 && y < 0 -> println("cuadrante 3")
+            x < 0 && y > 0 -> println("cuadrante 4")
+            else -> println("eje")
+
+        }
+    }
+}
+
+
+Práctica 117.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//creacion de un objeto Operaciones con dos valores
+// y utilizacion de sus funciones
+fun main() {
+    val op = Operaciones()
+    op.introducirValores()
+    op.sumar()
+    op.multiplicar()
+}
+
+class Operaciones {
+    var n1 = 0
+    var n2 = 0
+    //funcion para asignar valores a las variables de clase
+    fun introducirValores() {
+        println("introducir valor numero 1")
+        n1 = readLine()!!.toInt()
+        println("introducir valor numero 2")
+        n2 = readLine()!!.toInt()
+        println("la suma es : ${sumar()}")
+        println("la multiplicacion es : ${multiplicar()}")
+    }
+
+    //funcion para sumar los valores de clase
+    fun sumar() = n1 + n2
+
+    //funciones para multiplicar los valores de clase
+    fun multiplicar() = n1 * n2
+}
+
+
+Práctica 118.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+
+//creacion de un objeto Hijos con un array de edades
+// y utilizacion de sus funciones
+fun main() {
+    val hijos = Hijos()
+    hijos.introducirEdades()
+    hijos.edadMayor()
+    hijos.promedioEdades()
+}
+
+class Hijos {
+    val edades = IntArray(5)
+
+    //funcion para introducir las edades en el array de edades
+    fun introducirEdades() {
+        for (i in edades.indices) {
+            println("introducir valor numero 1")
+            edades[i] = readLine()!!.toInt()
+        }
+    }
+
+    //funcion para devolver la edad mayor del array
+    fun edadMayor(): Int {
+        var edadMayor = edades[0]
+        for (e in edades) {
+            if (e > edadMayor)
+                edadMayor = e
+        }
+        return edadMayor
+    }
+
+    //funcion para calcular el promedio de edades
+    fun promedioEdades(): Float {
+        var sumaEdades = 0
+        for (e in edades) {
+            sumaEdades += e
+        }
+        return sumaEdades.toFloat() / edades.size
+    }
+}
+
+
+Práctica 119.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+
+//creacion de dos clases Cliente y Banco que se implementan mutuamente
+//y utilizacion de sus funciones
+fun main() {
+    val cliente1 = Cliente("juan", 300)
+    val cliente2 = Cliente("pepe", 400)
+    val cliente3 = Cliente("pedro", 500)
+    val banco = Banco(cliente1, cliente2, cliente3)
+    cliente1.depositar(300)
+    cliente1.extraer(200)
+    cliente1.imprimir()
+    banco.dineroTotal()
+}
+
+class Cliente(var nombre: String, var dinero: Int) {
+    //funcion para depositar dinero
+    fun depositar(cantidad: Int) {
+        dinero += cantidad
+    }
+
+    //funcion para extraer dinero
+    fun extraer(cantidad: Int) {
+        dinero -= cantidad
+    }
+
+    //funcion para imprimir el cliente
+    fun imprimir() {
+        println("nombre: $nombre, dinero: $dinero")
+    }
+}
+
+class Banco(var cliente1: Cliente, var cliente2: Cliente, var cliente3: Cliente) {
+    //funcion para calcular el dinero total ingresado en el banco
+    fun dineroTotal() {
+        var sumaTotal = cliente1.dinero + cliente2.dinero + cliente3.dinero
+        println("hay $sumaTotal ingresado en el banco")
+    }
+}
+
+
+Práctica 120.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte6 completado`
+//programa para jugar a los dados mediante las clases Dado y JuegoDeDados
+fun main() {
+    val juegoDeDados = JuegoDeDados()
+    juegoDeDados.jugar()
+}
+
+class Dado() {
+    var valor = 1
+    //funcion para lanzar el dado
+    fun tirar() {
+        valor = (Math.random() * 6 + 1).toInt()
+    }
+
+    //funcion para imprimir el resultado del dado
+    fun imprimir() {
+        println(valor)
+    }
+}
+
+class JuegoDeDados() {
+    val dado1 = Dado()
+    val dado2 = Dado()
+    val dado3 = Dado()
+
+    //funcion para lanzar los dados
+    fun jugar() {
+        dado1.tirar()
+        dado1.imprimir()
+        dado2.tirar()
+        dado2.imprimir()
+        dado3.tirar()
+        dado3.imprimir()
+        if (dado1.valor == dado2.valor && dado2.valor == dado3.valor)
+            println("has ganado")
+        else {
+            println("has perdido")
+        }
+    }
+}
+
+
+Práctica 121.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+
+//programa para gestionar los socios y los clubes mediante las clases Socio y Club
+fun main() {
+    val socio1 = Socio("Pepe",3)
+    val socio2 = Socio("Pepito",4)
+    val socio3 = Socio("Peppote",5)
+    val club = Club(socio1,socio2,socio3)
+    club.socioMasAntiguo()
+}
+//clase socio con nombre y antiguedad
+class Socio(var nombre: String, var antiguedad: Int)
+
+//clase club con tres socios
+class Club(var socio1: Socio, var socio2: Socio, var socio3: Socio) {
+
+    //funcion para imprimir el socio con mas antiguedad
+    fun socioMasAntiguo() {
+        if (socio1.antiguedad > socio2.antiguedad && socio1.antiguedad > socio3.antiguedad) {
+            println(socio1.nombre)
+        } else if (socio2.antiguedad > socio3.antiguedad) {
+            println(socio2.nombre)
+        } else {
+            println(socio3.nombre)
+        }
+    }
+}
+
+
+Práctica 122.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+//creacion de un objeto Operaciones con dos valores
+// y utilizacion de sus funciones privadas
+fun main() {
+    val op = Operaciones()
+    op.introducirValores()
+}
+
+class Operaciones {
+    var n1 = 0
+    var n2 = 0
+    //funcion para asignar valores a las variables de clase
+    fun introducirValores() {
+        println("introducir valor numero 1")
+        n1 = readLine()!!.toInt()
+        println("introducir valor numero 2")
+        n2 = readLine()!!.toInt()
+        println("la suma es : ${sumar()}")
+        println("la multiplicacion es : ${multiplicar()}")
+    }
+
+    //funcion privada para sumar los valores de clase
+    private fun sumar() = n1 + n2
+
+    //funciones privada para multiplicar los valores de clase
+    private fun multiplicar() = n1 * n2
+}
+
+
+Práctica 123.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+//creacion de la clase Dado y utilizacion de sus metodos
+fun main() {
+    val dado = Dado()
+    dado.imprimir()
+    dado.tirar()
+    dado.imprimir()
+}
+
+class Dado() {
+    private var valor = 1
+    //funcion para lanzar el dado
+    fun tirar() {
+        valor = (Math.random() * 6 + 1).toInt()
+    }
+
+    //funcion para imprimir el resultado del dado y llamada a la privado
+    fun imprimir() {
+        println(valor)
+        imprimirLinea()
+    }
+    //funcion privada para imprimir linea separadora
+    private fun imprimirLinea(){
+        println("-------------------------")
+    }
+}
+
+
+Práctica 124.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+
+//clase Numeros con un array de 5 numeros que se llenan de forma automatica
+fun main() {
+    val numeros = Numeros()
+    numeros.imprimir()
+}
+
+class Numeros {
+    private val numeros = IntArray(5)
+
+    init {
+        llenar()
+    }
+
+    //funcion privada que llena el array con numeros aleatorios
+    private fun llenar() {
+        for (i in numeros.indices)
+            numeros[i] = ((Math.random() * 11)).toInt()
+    }
+
+    //funcion que imprime los numeros del array
+    fun imprimir() {
+        for (i in numeros.indices)
+            println("${numeros[i]}")
+    }
+}
+
+
+Práctica 125.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+
+//utilizacion de clase persona con getters y setters
+fun main() {
+    val persona = Persona()
+    persona.setEdad(6)
+    persona.setNombre("pepe")
+    println(persona.getNombre())
+    println(persona.getEdad())
+}
+
+//clase persona con getters y setters
+class Persona {
+    private var nombre = ""
+    private var edad = 0
+
+    //funcion para asignarle valor a la variable nombre
+    fun setNombre(nombre: String) {
+        this.nombre = nombre.toUpperCase()
+    }
+
+    //funcion para devolver el nombre
+    fun getNombre(): String {
+        return "(${this.nombre})"
+    }
+
+    //funcion para asignarle valor a la variable edad con control de entrada
+    fun setEdad(edad: Int) {
+        if (edad > 0)
+            this.edad = edad
+        else
+            this.edad = 0
+    }
+
+    //funcion para devolver la edad
+    fun getEdad(): Int {
+        return this.edad
+    }
+}
+
+
+Práctica 126.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+
+//utilizacion de clase empleado con getters y setters
+fun main() {
+    val emp = Empleado()
+    emp.setNombre("pepe")
+    emp.setSueldo(2222)
+    emp.imprimir()
+}
+
+//clase persona con getters y setters
+class Empleado {
+    private var nombre = ""
+    private var sueldo = 0
+
+    //funcion para asignarle valor a la variable nombre
+    fun setNombre(nombre: String) {
+        this.nombre = nombre
+    }
+
+    //funcion para devolver el nombre
+    fun getNombre(): String {
+        return this.nombre
+    }
+
+    //funcion para asignarle valor a la variable sueldo con control de entrada
+    fun setSueldo(sueldo: Int) {
+        if (sueldo > 0)
+            this.sueldo = sueldo
+        else
+            this.sueldo = 0
+    }
+
+    //funcion para devolver la sueldo
+    fun getSueldo(): Int {
+        return this.sueldo
+    }
+
+    //funcion para imprimir los datos del empleado
+    fun imprimir() {
+        println("nombre: $nombre, sueldo: $sueldo")
+    }
+}
+
+
+Práctica 127.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+
+//clase dado con control de valor introducido
+fun main() {
+    val dado = Dado2(8)
+    dado.imprimir()
+    dado.tirar()
+    dado.imprimir()
+}
+
+//clase dado con control de valor introducido
+class Dado2(private var valor: Int) {
+
+    //control de entrada
+    init {
+        if (!(valor in 1..6))
+            valor = 1
+    }
+
+    //funcion para lanzar el dado
+    fun tirar() {
+        valor = (Math.random() * 6 + 1).toInt()
+    }
+
+    //funcion para imprimir el resultado del dado
+    fun imprimir() {
+        println(valor)
+    }
+
+}
+
+
+Práctica 128.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+//utilizacion de la data class Producto
+fun main() {
+    val producto1 = Producto("123","para cocinar", 3.5f)
+    val producto2 = Producto("1234","para limpiar", 4.5f)
+}
+
+//data class producto con codigo, descripcion y precio
+data class Producto(var codigo: String, var descripcion: String, var precio: Float)
+
+
+Práctica 129.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+//utilizacion de la data class Persona
+fun main() {
+    val persona = Persona2("pepe",34)
+    println(persona)
+}
+
+//data class Persona con nombre, edad y metodo modificado toString
+data class Persona2(var nombre: String, var edad: Int) {
+    override fun toString(): String {
+        return "$nombre, $edad"
+    }
+}
+
+
+Práctica 130.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+
+//utilizacion de la data class Dado
+fun main() {
+    val dado = Dado3(5)
+    println(dado)
+}
+
+//data class Dado con valor y metodo modificado toString
+data class Dado3(var valor: Int) {
+    override fun toString(): String {
+        var str = ""
+        for (i in 1..valor)
+            str += "*"
+        return str
+    }
+}
+
+
+Práctica 131.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+
+//utilizacion de clase enumerada PaloCarta en Clase externa Carta
+fun main() {
+    Carta(PaloCarta.PICAS,7)
+}
+//clase enumerada PaloCarta con picas, treboles, diamantes y corazones
+enum class PaloCarta{
+    PICAS,
+    TREBOLES,
+    DIAMANTES,
+    CORAZONES
+}
+//Clase carta con atributo de clase enumerada PaloCarta
+class Carta(val palo : PaloCarta,val valor:Int)
+
+
+Práctica 132.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+
+//creacion de clase enumerada Operacionesbasicas e implementacion en clase externa
+fun main() {
+    val op = Operar(3, 7, OperacionesBasicas.DIVISION)
+    println(op.operar())
+}
+
+//clase enumerada con los tipos de operaciones basicas
+enum class OperacionesBasicas(val tipo: String) {
+    SUMA("+"),
+    RESTA("-"),
+    MULTIPLICACION("*"),
+    DIVISION("/")
+}
+
+//clase operar con atributo de clase enumerada
+class Operar(val n1: Int, val n2: Int, val operacion: OperacionesBasicas) {
+    //funcion para realizar la operacion con los valores introducidos
+    fun operar(): Double {
+        when (operacion) {
+            OperacionesBasicas.SUMA -> return (n1 + n2).toDouble()
+            OperacionesBasicas.RESTA -> return (n1 - n2).toDouble()
+            OperacionesBasicas.MULTIPLICACION -> return (n1 * n2).toDouble()
+            OperacionesBasicas.DIVISION -> return n1.toDouble() / n2
+        }
+    }
+}
+
+
+Práctica 133.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+
+//utilizacion de constantes de una clase enumerada
+fun main() {
+    println("${Paises.MEXICO}, ${Paises.MEXICO.habitantes}")
+    println("${Paises.ARGENTINA}, ${Paises.ARGENTINA.habitantes}")
+}
+
+//clase enumerada paises con constante habitantes
+enum class Paises(val habitantes: Int) {
+    COLOMBIA(300000),
+    MEXICO(666666),
+    ARGENTINA(3141592),
+}
+
+
+Práctica 134.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+//utilizacion del objeto matematica
+fun main() {
+    val m = Matematica
+    println(m.PI)
+    println(m.valorAleatorio(45,67))
+}
+//Objeto matematica con variable pi y metodo devolver valor aleatorio en rango
+object Matematica {
+    val PI = 3.14159265358979
+    //funcion que devuelve un valor aleatorio en un rango
+    fun valorAleatorio(nMinimo: Int, nMaximo: Int): Int {
+        return (Math.random() * (nMaximo - nMinimo) + nMinimo).toInt()
+    }
+}
+
+
+Práctica 135.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+
+//utilizacion de objeto con implementacion interna
+fun main() {
+    val dados = object {
+        val tiradasDados = IntArray(5)
+
+        //funcion para tirar los dados
+        fun tirar() {
+            for (i in tiradasDados.indices)
+                tiradasDados[i] = (Math.random() * 6 + 1).toInt()
+        }
+
+        //funcion para mostrar los resultados
+        fun mostrar() {
+            for (i in tiradasDados)
+                println(i)
+        }
+
+        //funcion para mostrar el resultado mayor
+        fun mostrarMayor() {
+            var mayor = tiradasDados[0]
+            for (i in tiradasDados) {
+                if (i > mayor)
+                    mayor = i
+            }
+            println(mayor)
+        }
+    }
+    dados.tirar()
+    dados.mostrar()
+    dados.mostrarMayor()
+}
+
+
+Práctica 136.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+//implementacion de objecto interno y utilizacion de sus funciones
+
+fun main() {
+    val mayor = object {
+        //funcion para devolver el mayor de dos Ints
+        fun mayor(n1: Int, n2: Int) = if (n1 > n2) n1 else n2
+
+        //funcion para devolver el mayor de dos Floats
+        fun mayor(n1: Float, n2: Float) = if (n1 > n2) n1 else n2
+
+        //funcion para devolver el mayor de dos Double
+        fun mayor(n1: Double, n2: Double) = if (n1 > n2) n1 else n2
+    }
+
+    println(mayor.mayor(3, 4))
+    println(mayor.mayor(3f, 4f))
+    println(mayor.mayor(3.6, 4.7))
+}
+
+
+Práctica 137.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+
+//utilizacion de clase persona y empleado y su imlementacion de herencia
+fun main() {
+    val persona = Persona3("pepe",34)
+    val empleado = Empleado2("juanito",36,45454)
+    empleado.debePagarImpuestos()
+}
+
+//clase padre persona con nombre y edad
+open class Persona3(var nombre: String, var edad: Int) {
+}
+
+//clase hija empleado con sueldo y funcion añadida
+class Empleado2(var nombreEmp: String, var edadEmp: Int, var sueldo: Int) :
+    Persona3(nombreEmp, edadEmp) {
+    //funcion que muestra si se deben pagar impuestos
+    fun debePagarImpuestos() {
+        if (sueldo > 3000)
+            println("si")
+        else
+            println("no")
+    }
+}
+
+
+Práctica 138.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+//implementacion de dos clases Calculadora y CalculadoraCientifica mediante
+//herencia y utilizacion de sus metodos
+fun main() {
+    val calc = CalculadoraCientifica()
+    println(calc.sumar(45.0, 54.0))
+    println(calc.restar(45.0, 54.0))
+    println(calc.multiplicar(45.0, 54.0))
+    println(calc.dividir(45.0, 54.0))
+    println(calc.elevar(45.0, 54.0))
+    println(calc.raizCuadrada(54.0))
+}
+
+//clase padre calculadora con metodos basicos
+open class Calculadora {
+    //funcion para sumar dos valores
+    fun sumar(n1: Double, n2: Double) = n1 + n2
+
+    //funcion para restar dos valores
+    fun restar(n1: Double, n2: Double) = n1 - n2
+
+    //funcion para multiplicar dos valores
+    fun multiplicar(n1: Double, n2: Double) = n1 * n2
+
+    //funcion para dividir dos valores
+    fun dividir(n1: Double, n2: Double) = n1 / n2
+}
+
+//clase hija con metodos basicos heredados y metodos mas avanzados
+class CalculadoraCientifica : Calculadora() {
+    //funcion para elevar un valor
+    fun elevar(n: Double, e: Double) = Math.pow(n, e)
+
+    //funcion para sacar la raiz cuadrada de un valor
+    fun raizCuadrada(n: Double) = Math.sqrt(n)
+}
+
+
+Práctica 139.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+//implementacion de dos clases Dado y DadoRrecuadro mediante
+//herencia y utilizacion de sus metodos
+fun main() {
+    val dado = Dado4()
+    dado.tirar()
+    dado.mostrarValor()
+    val dado2 = DadoRecuadro()
+    dado2.tirar()
+    dado2.mostrarValor()
+}
+//clase padre dado con valor y metodo tirar y mostrar
+open class Dado4 {
+    var valor = 1
+    //funcion que permite asignarle un valor aleatorio al dado
+    fun tirar() {
+        valor = (Math.random() * 6 + 1).toInt()
+    }
+//funcion que permite mostrar el valor del dado
+    open fun mostrarValor() {
+        println(valor)
+    }
+}
+//clase hija con metodo overrideado de mostrarValor
+class DadoRecuadro : Dado4() {
+    override fun mostrarValor() {
+        println("***\n*$valor*\n***")
+    }
+}
+
+
+Práctica 140.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte7 completado`
+//implementacion de clase padre abstracta operar y clases hijas Sumar y
+//Restar
+fun main() {
+    val suma= Sumar(5,4)
+    suma.calcular()
+    suma.mostrarResultado()
+    val restar= Restar(5,4)
+    restar.calcular()
+    restar.mostrarResultado()
+}
+
+//clase padre abstracta operar
+abstract class Operacion(var n1: Int, var n2: Int) {
+    var resultado: Int = 0
+
+    //funcion para mostrar el resultado
+    fun mostrarResultado() {
+        println(resultado)
+    }
+
+    //funcion abstracta para calcular el resultado
+    abstract fun calcular()
+}
+
+//clase hija sumar
+class Sumar(n1: Int, n2: Int) : Operacion(n1, n2) {
+    //funcion overrideada para calcular la suma
+    override fun calcular() {
+        resultado = n1 + n2
+    }
+}
+
+//clase hija restar
+class Restar(n1: Int, n2: Int) : Operacion(n1, n2) {
+    //funcion overrideada para calcular la resta
+    override fun calcular() {
+        resultado = n1 - n2
+    }
+}
+
+
+Práctica 141.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+
+//implementacion de clase padre abstracta cuenta y clases hijas PlazoFijo y
+//CajaAhorro
+fun main() {
+    val pf = PlazoFijo("diego",12000,56,4.5)
+    val ca = CajaAhorro("luca",21000)
+    pf.mostrar()
+    ca.mostrar()
+}
+
+//clase padre abstracta cuenta
+abstract class Cuenta(var titular: String, var monto: Int) {
+
+    //funcion para mostrar la informacion de la cuenta
+    open fun mostrar() {
+        println("Titular: $titular, Monto: $monto")
+    }
+}
+
+//clase hija plazoFijo
+class PlazoFijo(titular: String, monto: Int, var plazo: Int, var interes: Double) :
+    Cuenta(titular, monto) {
+    //funcion overrideada para mostrar la informacion de la cuenta
+    override fun mostrar() {
+        println("cuenta plazo fijo")
+        super.mostrar()
+        println("Plazo: $plazo, Interes: $interes")
+    }
+
+}
+
+//clase hija cajaAhorro
+class CajaAhorro(titular: String, monto: Int) : Cuenta(titular, monto) {
+    //funcion overrideada para mostrar la informacion de la cuenta
+    override fun mostrar() {
+        println("cuenta caja ahorro")
+        super.mostrar()
+    }
+
+}
+
+
+Práctica 142.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//implementacion de interfaz Punto en dos clases PuntoPlano y PuntoEspacio
+fun main() {
+    val puntoP = PuntoPlano(2, 3)
+    val puntoE = PuntoEspacio(2, 3, 4)
+    puntoP.imprimir()
+    puntoE.imprimir()
+}
+
+//interfaz punto
+interface Punto {
+    //funcion imprimir
+    fun imprimir()
+}
+
+//clase PuntoPlano que implementa la interfaz Punto
+class PuntoPlano(val x: Int, val y: Int) : Punto {
+    //funcion de la interfaz punto adaptada
+    override fun imprimir() {
+        println("punto en el plano($x,$y)")
+    }
+}
+
+//clase PuntoEspacio que implementa la interfaz Punto
+class PuntoEspacio(val x: Int, val y: Int, val z: Int) : Punto {
+    //funcion de la interfaz punto adaptada
+    override fun imprimir() {
+        println("punto en el espacio($x,$y,$z)")
+    }
+}
+
+
+Práctica 143.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+
+//implementacion de interfaz Figura en dos clases Cuadrado y Rectangulo
+fun main() {
+    val c = Cuadrado(4)
+    val r = Rectangulo(3, 5)
+    c.tituloResultado()
+    println(c.calcularPerimetro())
+    println(c.calcularSuperficie())
+    r.tituloResultado()
+    println(r.calcularPerimetro())
+    println(r.calcularSuperficie())
+}
+
+//interfaz figura
+interface Figura {
+    //funcion para calcular la superficie de las figuras que implementen la interfaz
+    fun calcularSuperficie(): Int
+
+    //funcion para calcular el perimetro de las figuras que implementen la interfaz
+    fun calcularPerimetro(): Int
+
+    //funcion para imprimir el titulo
+    fun tituloResultado() {
+        println("Datos de la figura")
+    }
+}
+
+//clase Cuadrado que implementa la interfaz Figura
+class Cuadrado(var lado: Int) : Figura {
+    //funcion de la interfaz figura para calcular la superficie
+    override fun calcularSuperficie(): Int {
+        return lado * lado
+    }
+
+    //funcion de la interfaz figura para calcular el perimetro
+    override fun calcularPerimetro(): Int {
+        return lado * 4
+    }
+}
+
+//clase Rectangulo que implementa la interfaz Figura
+class Rectangulo(var base: Int, var altura: Int) : Figura {
+    //funcion de la interfaz figura para calcular la superficie
+    override fun calcularSuperficie(): Int {
+        return base * altura
+    }
+
+    //funcion de la interfaz figura para calcular el perimetro
+    override fun calcularPerimetro(): Int {
+        return base * 2 + altura * 2
+    }
+}
+
+
+Práctica 144.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//implementacion de array con objeto Persona
+fun main() {
+    val personas: Array<Persona> = arrayOf(
+        Persona("lazaro", 17), Persona("ruben", 34),
+        Persona("diegos", 86), Persona("lukis", 52)
+    )
+    var nMayores = 0
+    for (persona in personas){
+        if (persona.esMayorDeEdad())
+            nMayores++
+    }
+    println(nMayores)
+}
+//clase Persona con nombre y edad
+class Persona(var nombre: String, var edad: Int) {
+    //funcion para imprimir la persona
+    fun imprimir() {
+        println("nombre: $nombre, edad: $edad")
+    }
+    //funcion que devuelve si una persona es mayor de edad
+    fun esMayorDeEdad(): Boolean {
+        return edad >= 18
+    }
+}
+
+
+Práctica 145.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//implementacion de array de articulos y modificacion mediante funciones
+fun main() {
+    val articulos: Array<Articulo> = arrayOf(
+        Articulo(123, "peinar", 4f),
+        Articulo(1234, "lavar", 5f),
+        Articulo(12345, "comer", 5.5f),
+        Articulo(123456, "dieguear", 6f),
+    )
+    mostrarArticulos(articulos)
+    incrementarArticulos(articulos)
+    mostrarArticulos(articulos)
+}
+//funcion para mostrar los articulos pasados por parametro
+fun mostrarArticulos(articulos: Array<Articulo>) {
+    for (a in articulos)
+        println("codigo: ${a.codigo}, descripcion: ${a.descripcion}, precio: ${a.precio}")
+}
+//funcion para incrementar el precio de los articulos pasados por parametro
+fun incrementarArticulos(articulos: Array<Articulo>) {
+    for (a in articulos) {
+        a.precio *= 1.1f
+    }
+}
+//data class articulo con codigo, descripcion y precio
+data class Articulo(
+    val codigo: Int, val descripcion: String, var precio:
+    Float
+)
+
+
+Práctica 146.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+
+//implementacion de arraylist de dados y utilizacion de sus metodos
+fun main() {
+    val dados = arrayListOf<Dado>()
+    for (i in 1..5)
+        dados.add(Dado())
+
+    for (dado in dados)
+        dado.tirar()
+
+    for (dado in dados)
+        dado.mostrarValor()
+}
+
+//clase padre dado con valor y metodo tirar y mostrar
+open class Dado {
+    var valor = 1
+
+    //funcion que permite asignarle un valor aleatorio al dado
+    fun tirar() {
+        valor = (Math.random() * 6 + 1).toInt()
+    }
+
+    //funcion que permite mostrar el valor del dado
+    open fun mostrarValor() {
+        println(valor)
+    }
+}
+
+
+Práctica 147.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//implementacion de funcion de orden superior
+fun main() {
+    val resultado1 = operar(10, 5, ::sumar)
+    val resultado2 = operar(10, 5, ::restar)
+    val resultado3 = operar(10, 5, ::multiplicar)
+    val resultado4 = operar(10, 5, ::dividir)
+
+    println(resultado1)
+    println(resultado2)
+    println(resultado3)
+    println(resultado4)
+}
+
+//funcion de orden superior
+fun operar(v1: Int, v2: Int, fn: (Int, Int) -> Int): Int {
+    return fn(v1, v2)
+}
+
+//funcion que devuelve la suma de los valores introducidos por parametro
+fun sumar(x1: Int, x2: Int) = x1 + x2
+
+//funcion que devuelve la resta de los valores introducidos por parametro
+fun restar(x1: Int, x2: Int) = x1 - x2
+
+//funcion que devuelve la multiplicacion de los valores introducidos por parametro
+fun multiplicar(x1: Int, x2: Int) = x1 * x2
+
+//funcion que devuelve la division de los valores introducidos por parametro
+fun dividir(x1: Int, x2: Int) = x1 / x2
+
+
+
+Práctica 148.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+
+//implementacion de funcion de orden superior en la clase persona
+fun main() {
+    val persona = Persona2("pepe", 76)
+    println(persona.esMayorDeEdad(::mayorArgentina))
+    println(persona.esMayorDeEdad(::mayorEstadosUnidos))
+}
+
+//clase Persona con nombre y edad
+class Persona2(private var nombre: String, private var edad: Int) {
+
+    //funcion para imprimir la persona
+    fun imprimir() {
+        println("nombre: $nombre, edad: $edad")
+    }
+
+    //funcion de orden superior que devuelve si una persona es mayor de edad
+    fun esMayorDeEdad(fn: (Int) -> Boolean): Boolean {
+        return fn(edad)
+    }
+}
+
+//funcion que devuelve si una persona es mayor de edad en Estados Unidos
+fun mayorEstadosUnidos(edad: Int): Boolean {
+    return edad >= 21
+
+}
+
+//funcion que devuelve si una persona es mayor de edad en Argentina
+fun mayorArgentina(edad: Int): Boolean {
+    return edad >= 18
+}
+
+
+Práctica 149.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//implementacion de funcion de orden superior y expresiones lambda
+fun main() {
+    val suma = operar2(2, 3,) { x, y -> x + y }
+    println(suma)
+    val resta = operar2(12, 2) { x, y -> x - y }
+    println(resta)
+    val elevarA = operar2(2, 4) { x, y ->
+        var valor = 1
+        for (i in 1..y)
+            valor *=  x
+        valor
+    }
+    println(elevarA)
+}
+//funcion de orden superior
+fun operar2(n1: Int, n2: Int, fn: (Int, Int) -> Int): Int {
+    return fn(n1, n2)
+}
+
+
+
+Práctica 150.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//implementacion de funcion de orden superior y funciones lambda
+fun main() {
+    val valores = IntArray(10)
+    for (i in valores.indices)
+        valores[i] = (Math.random() * 100).toInt()
+    println("valores")
+    for (v in valores)
+        println(v)
+    println("multiplos de 2")
+    mostrar(valores) { x -> x % 2 == 0 }
+    println("multiplos de 3 o 5")
+    mostrar(valores) { x -> x % 3 == 0 || x % 5 == 0 }
+    println("numeros mayores a 50")
+    mostrar(valores) { x -> x >= 50 }
+    println("numeros entre [1-10],[20-30] y [90-95]")
+    mostrar(valores) { x ->
+        when {
+            x in 1..10 -> true
+            x in 20..30 -> true
+            x in 90..95 -> true
+            else -> false
+        }
+    }
+}
+//funcion de orden superior que muestra los numeros del array que cumplen la
+//condicion de la funcion pasadada por parametro
+fun mostrar(valores: IntArray, fn: (Int) -> Boolean) {
+    for (v in valores)
+        if (fn(v))
+            println(v)
+}
+
+
+Práctica 151.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+
+//implementacion de funcion de orden superior y funciones lambda
+fun main() {
+    val str = "Hola, Que Tal."
+    val strVocales =
+        modificar(str) {
+            it == 'a' || it == 'A' || it == 'e' || it == 'E' || it == 'i' || it == 'I' || it == 'o' || it == 'O' || it == 'u' || it == 'U'
+        }
+    val strMayus = modificar(str) {it.isUpperCase()}
+    val strAlpha = modificar(str) {!it.isLetter()}
+    println(strVocales)
+    println(strMayus)
+    println(strAlpha)
+}
+
+//funcion de orden superior que modifica un string
+fun modificar(string: String, fn: (Char) -> Boolean): String {
+    var rturn = ""
+    for (s in string) {
+        if (fn(s))
+            rturn += s
+    }
+    return rturn
+}
+
+
+Práctica 152.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//implementacion de funcion lambda con array
+fun main() {
+    val array = IntArray(20) { (Math.random() * 10 + 1).toInt() }
+    mostrarArray(array)
+    menoresDe6(array)
+    todosMenoresDe10(array)
+    hay10(array)
+}
+
+//funcion para mostrar el array
+fun mostrarArray(array: IntArray) {
+    for (e in array)
+        println(e)
+}
+
+//funcion para mostrar la cantidad de digitos menores a 6
+fun menoresDe6(array: IntArray) {
+    var n = 0
+    for (e in array)
+        if (e < 6)
+            n++
+    println("hay $n numeros menores a 6")
+}
+
+//funcion para imprimir si todos los elementos son menores a 10
+fun todosMenoresDe10(array: IntArray) {
+    var todosMenores = true
+    for (e in array)
+        if (e == 10)
+            todosMenores = false
+    if (todosMenores)
+        println("todos los elementos son menores o iguales a 9")
+}
+
+//funcion para imprimir si hay algun 10 en el array
+fun hay10(array: IntArray) {
+    var hay10 = true
+    for (e in array)
+        if (e == 10)
+            hay10 = true
+    if (hay10)
+        println("almenos un elemento es 10")
+}
+
+
+
+
+
+Práctica 153.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//creacion de floatArray y utilizacion de funciones
+fun main() {
+    val array = FloatArray(10)
+    for (i in array.indices)
+        array[i] = readLine()!!.toFloat()
+    menoresDe50(array)
+    todosMenoresDe50(array)
+}
+
+//funcion para mostrar la cantidad de digitos menores a 6
+fun menoresDe50(array: FloatArray) {
+    var n = 0
+    for (e in array)
+        if (e < 50f)
+            n++
+    println("hay $n numeros menores a 50")
+}
+
+//funcion para imprimir si todos los elementos son menores a 10
+fun todosMenoresDe50(array: FloatArray) {
+    var todosMenores = true
+    for (e in array)
+        if (e == 50f)
+            todosMenores = false
+    if (todosMenores)
+        println("todos los elementos son menores o iguales a 50")
+}
+
+
+Práctica 154.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//implementacion de funcion de orden superior y funciones lambda
+fun main() {
+    val array = IntArray(10) { (Math.random() * 100 + 1).toInt() }
+
+    for (e in array)
+        println(e)
+
+    var cantidadMultiples3 = 0
+    calculo(array) { if (it % 3 == 0) cantidadMultiples3++ }
+    println("hay $cantidadMultiples3 multiples de 3")
+
+    var sumaMayores50 = 0
+    calculo(array) { if (it >= 50) sumaMayores50 += it }
+    println("la suma de los numeros mayores de 50 es $sumaMayores50")
+}
+//funcion de orden superior
+fun calculo(array: IntArray, fn: (Int) -> Unit) {
+    for (e in array)
+        fn(e)
+}
+
+
+Práctica 155.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+
+//implementacion de funcion lambda
+fun main() {
+    val array = IntArray(10) { (Math.random() * 100 + 1).toInt() }
+
+    for (e in array)
+        println(e)
+
+    var cantidadMultiples3 = 0
+    array.forEach { if (it % 3 == 0) cantidadMultiples3++ }
+    println("hay $cantidadMultiples3 multiples de 3")
+
+    var sumaMayores50 = 0
+    array.forEach { if (it >= 50) sumaMayores50 += it }
+    println("la suma de los numeros mayores de 50 es $sumaMayores50")
+}
+
+
+
+Práctica 156.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//utilizacion de las funciones de la clase persona mediante funcion lambda foreach
+fun main() {
+    val personas: Array<Persona3> = arrayOf(
+        Persona3("pepe", 23),
+        Persona3("lazaro", 17),
+        Persona3("luca", 101),
+        Persona3("diegas", 66)
+    )
+
+    personas.forEach {
+        it.imprimir()
+        it.esMayorDeEdad()
+    }
+}
+
+//clase Persona con nombre y edad
+class Persona3(private var nombre: String, private var edad: Int) {
+
+    //funcion para imprimir la persona
+    fun imprimir() {
+        println("nombre: $nombre, edad: $edad")
+    }
+
+    //funcion que devuelve si una persona es mayor de edad
+    fun esMayorDeEdad() {
+        if (edad >= 18)
+            println("es mayor de edad")
+        else
+            println("no es mayor de edad")
+    }
+}
+
+
+
+Práctica 157.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+
+//creacion de array de dados y conteo de los valores conseguidos
+//mediante implementacion lambda de foreach
+fun main() {
+    val dados: Array<Dado2> = arrayOf(
+        Dado2(),
+        Dado2(),
+        Dado2(),
+        Dado2(),
+        Dado2()
+    )
+    var contar1 = 0
+    var contar2 = 0
+    var contar3 = 0
+    var contar4 = 0
+    var contar5 = 0
+    var contar6 = 0
+
+    dados.forEach {
+        it.tirar()
+        it.mostrarValor()
+        when (it.valor) {
+            1 -> contar1++
+            2 -> contar2++
+            3 -> contar3++
+            4 -> contar4++
+            5 -> contar5++
+            6 -> contar6++
+        }
+    }
+    println("hay $contar1 1s")
+    println("hay $contar2 2s")
+    println("hay $contar3 3s")
+    println("hay $contar4 4s")
+    println("hay $contar5 5s")
+    println("hay $contar6 6s")
+}
+
+//clase padre dado con valor y metodo tirar y mostrar
+open class Dado2 {
+    var valor = 1
+
+    //funcion que permite asignarle un valor aleatorio al dado
+    fun tirar() {
+        valor = (Math.random() * 6 + 1).toInt()
+    }
+
+    //funcion que permite mostrar el valor del dado
+    open fun mostrarValor() {
+        println(valor)
+    }
+}
+
+
+Práctica 158.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//implementacion de funciones de extension
+fun main() {
+    val cadena1 = "Viento"
+    println(cadena1.mitadPrimera())
+    println(cadena1.segundaMitad())
+}
+//funcion de extension de la clase String que devuelve la primera mitad de la cadena
+fun String.mitadPrimera(): String {
+    return this.substring(0..this.length / 2 - 1)
+}
+//funcion de extension de la clase String que devuelve la segunda mitad de la cadena
+fun String.segundaMitad(): String {
+    return this.substring(this.length / 2..this.length - 1)
+}
+
+
+
+
+Práctica 159.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//implementacion de funcion de extension de la clase IntArray
+fun main() {
+    val array = IntArray(20) { (Math.random() * 10 + 1).toInt() }
+    array.mostrarEnUnaLinea()
+}
+//funcion de extension que permite mostrar el contenido del array en una linea
+fun IntArray.mostrarEnUnaLinea() {
+    this.forEach { print("$it, ") }
+}
+
+
+Práctica 160.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte8 completado`
+//implementacion de funcion de extension de la clase String
+fun main() {
+    val str = "hola"
+    str.mostrarEnUnaLinea()
+}
+
+//funcion de extension que permite mostrar el contenido de un String en una linea
+fun String.mostrarEnUnaLinea() {
+    this.forEach { print("$it, ") }
+}
+
+
+Práctica 161.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//implementacion de funcion de extension de la clase Int
+fun main() {
+    val n = 5
+    n.hasta(10)
+
+}
+//funcion de extension de la clase Intque permite mostrar los numeros hasta el valor
+//introducido por parametro
+fun Int.hasta(hasta:Int) {
+    for (i in this..hasta)
+        println("$i, ")
+}
+
+
+Práctica 162.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//operaciones basicas de objetos de la clase Array con operadores
+//personalizados
+fun main() {
+    val array1 = Array()
+    array1.llenar()
+    val array2 = Array()
+    array2.llenar()
+    array1.mostrar()
+    array2.mostrar()
+    val arraySuma = array1 + array2
+    arraySuma.mostrar()
+    val arrayResta = array1 - array2
+    arrayResta.mostrar()
+    val arrayMulti = array1 * array2
+    arrayMulti.mostrar()
+    val arrayDiv = array1 / array2
+    arrayDiv.mostrar()
+}
+
+//clase Array con un ArrayInt de 5 posiciones
+class Array {
+    val array = IntArray(5)
+
+    //funcion para llenar el array
+    fun llenar() {
+        for (i in array.indices)
+            array[i] = (Math.random() * 10 + 1).toInt()
+    }
+
+    //funcion para mostrar el array
+    fun mostrar() {
+        for (elemento in array)
+            println("$elemento")
+        println()
+    }
+
+    //funcion operador para sumar
+    operator fun plus(array2: Array): Array {
+        val suma = Array()
+        for (i in this.array.indices)
+            suma.array[i] = this.array[i] + array2.array[i]
+        return suma
+    }
+
+    //funcion operador para restar
+    operator fun minus(array2: Array): Array {
+        val resta = Array()
+        for (i in this.array.indices)
+            resta.array[i] = this.array[i] - array2.array[i]
+        return resta
+    }
+
+    //funcion operador para multiplicar
+    operator fun times(array2: Array): Array {
+        val producto = Array()
+        for (i in this.array.indices)
+            producto.array[i] = this.array[i] * array2.array[i]
+        return producto
+    }
+
+    //funcion operador para dividir
+    operator fun div(array2: Array): Array {
+        val division = Array()
+        for (i in this.array.indices)
+            division.array[i] = this.array[i] / array2.array[i]
+        return division
+    }
+}
+
+
+
+
+Práctica 163.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//operaciones basicas de objetos de la clase vector con operadores
+//personalizados
+fun main() {
+    val vector = Vector()
+    vector.llenar()
+    vector.mostrar()
+    val vectorMulti = vector * 4
+    vectorMulti.mostrar()
+}
+
+//clase Array
+class Vector {
+    val array = IntArray(5)
+
+    //funcion para llenar el array
+    fun llenar() {
+        for (i in array.indices)
+            array[i] = (Math.random() * 10 + 1).toInt()
+    }
+
+    //funcion para mostrar el array
+    fun mostrar() {
+        for (elemento in array)
+            println("$elemento")
+        println()
+    }
+
+    //funcion operador para multiplicar
+    operator fun times(n: Int): Vector {
+        val producto = Vector()
+        for (i in this.array.indices)
+            producto.array[i] = this.array[i] * n
+        return producto
+    }
+}
+
+
+
+Práctica 164.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+
+//operaciones incremento y decremento de objetos de la clase vector
+//con operadores personalizados
+fun main() {
+    var vector = Vector2()
+    vector.llenar()
+    vector.mostrar()
+    vector++
+    vector.mostrar()
+    vector--
+    vector.mostrar()
+}
+
+//clase Vector
+class Vector2 {
+    val array = IntArray(5)
+
+    //funcion para llenar el array
+    fun llenar() {
+        for (i in array.indices)
+            array[i] = (Math.random() * 10 + 1).toInt()
+    }
+
+    //funcion para mostrar el array
+    fun mostrar() {
+        for (elemento in array)
+            println("$elemento")
+        println()
+    }
+
+    //funcion operador para incrementar
+    operator fun inc(): Vector2 {
+        val incremento = Vector2()
+        for (i in this.array.indices)
+            incremento.array[i] = this.array[i] + 1
+        return incremento
+    }
+    //funcion operador para decrementar
+    operator fun dec(): Vector2 {
+        val decremento = Vector2()
+        for (i in this.array.indices)
+            decremento.array[i] = this.array[i] - 1
+        return decremento
+    }
+}
+
+
+
+Práctica 165.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//operacion comparacion de objetos de la clase persona
+//con operador personalizado
+fun main() {
+    val persona = Persona("pepe", 23)
+    val persona2 = Persona("juan", 24)
+    if (persona > persona2)
+        println(persona.nombre + "es mayor.")
+    if (persona < persona2)
+        println(persona2.nombre + "es mayor.")
+    if (persona == persona2)
+        println("los dos tienen la misma edad")
+}
+//clase persona
+class Persona(val nombre: String, val edad: Int) {
+    fun mostrar() {
+        println("Nombre: $nombre, edad: $edad")
+    }
+//funcion operador compareTo
+    operator fun compareTo(persona2: Persona): Int {
+        return when {
+            edad < persona2.edad -> -1
+            edad > persona2.edad -> 1
+            else -> 0
+        }
+    }
+}
+
+
+Práctica 166.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+
+//clase Tateti con funciones operadoras set y get sobrecargadas
+fun main() {
+    var tateti = TaTeTi()
+    tateti.imprimir()
+    tateti[0, 2] = 1
+    tateti[1, 1] = 2
+}
+
+class TaTeTi {
+    val tablero = IntArray(9)
+    fun imprimir() {
+        for (fila in 0..2) {
+            for (columna in 0..2)
+                print("${this[fila, columna]} ")
+            println()
+        }
+        println()
+    }
+
+    //funcion operador set sobrecargada
+    operator fun set(fila: Int, columna: Int, valor: Int) {
+        tablero[fila * 3 + columna] = valor
+        imprimir()
+    }
+
+    //funcion operador get sobrecargada
+    operator fun get(fila: Int, columna: Int): Int {
+        return tablero[fila * 3 + columna]
+    }
+}
+
+
+Práctica 167.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//implementacion de clase dados con funcion de operador invoke
+fun main() {
+    val dados = Dados()
+    dados.tirar()
+    println(dados(6))
+    println(dados(3))
+}
+
+class Dados (){
+    val array = IntArray(10)
+
+    fun tirar() {
+        for(i in array.indices)
+            array[i] = ((Math.random() * 6) + 1).toInt()
+    }
+//funcion operador invoke
+    operator fun invoke(pos: Int) = array[pos]
+}
+
+
+
+Práctica 168.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+
+//implementacion de clase vector con funcion de operador plusAssign
+fun main() {
+    val vector1 = Vector3()
+    vector1.llenar()
+    vector1.mostrar()
+    val vector2 = Vector3()
+    vector2.llenar()
+    vector1.mostrar()
+    vector1 += vector2
+    vector1.mostrar()
+}
+
+
+//clase Vector
+class Vector3 {
+    val array = IntArray(5)
+
+    //funcion para llenar el array
+    fun llenar() {
+        for (i in array.indices)
+            array[i] = (Math.random() * 10 + 1).toInt()
+    }
+
+    //funcion para mostrar el array
+    fun mostrar() {
+        for (elemento in array)
+            println("$elemento")
+        println()
+    }
+
+    //funcion operador plusAssign
+    operator fun plusAssign(vector2: Vector3) {
+        for (i in this.array.indices)
+            this.array[i] += vector2.array[i]
+    }
+}
+
+
+Práctica 169.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//implementacion de la funcion operador in mediante clases Clase y Alumno
+fun main() {
+    val alumno1 = Alumno(123,"pepe")
+    val alumno2 = Alumno(1234,"juan")
+    val alumno3 = Alumno(12345,"dieguis")
+    val clase = Clase(alumno1,alumno2, alumno3)
+    if (alumno1 in clase)
+        println(alumno1.nombre+" esta en clase")
+    else
+        println(alumno1.nombre+" no esta en clase")
+}
+//data class alumno
+data class Alumno(var nDoc: Int, var nombre: String)
+
+//clase Clase con tres objetos alumno
+class Clase(var alumno1: Alumno, var alumno2: Alumno, var alumno3: Alumno) {
+//funcion de operador contains sobrecargada
+    operator fun contains(alumno: Alumno): Boolean {
+        return alumno.nDoc == alumno1.nDoc || alumno.nDoc == alumno2.nDoc || alumno.nDoc == alumno3.nDoc
+    }
+}
+
+
+Práctica 170.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//implementacion de metodo con numero variable de argumentos
+fun main() {
+    println(suma(2,3,8,6,7))
+}
+//funcion con numero variable de parametros que retorna la suma de todos ellos
+fun suma(vararg valores: Int): Int {
+    var suma = 0
+    for (n in valores)
+        suma += n
+    return suma
+
+}
+
+
+Práctica 171.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//implementacion de funcion operar con numero variable de parametros
+//y creacion de clase enumerada TipoOp
+fun main() {
+    println("suma: ${operar(TipoOp.SUMA, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 4.0)}")
+    println("media: ${operar(TipoOp.MEDIA, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 4.0)}")
+}
+
+//enum class con las operaciones disponibles
+enum class TipoOp {
+    SUMA,
+    MEDIA
+}
+
+//funcion operar con numero variable de parametros
+fun operar(operacion: TipoOp, vararg numeros: Double): Double {
+    var suma = 0.0
+    for (n in numeros)
+        suma += n
+    if (operacion == TipoOp.SUMA)
+        return suma
+    else
+        return suma / numeros.size
+}
+
+
+Práctica 172.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//implementacion de funcion cantidadMayoresDeEdad con numero variable de parametros
+fun main() {
+    println("cantidad de mayores de edad: ${cantidadMayoresDeEdad(56,32,12,23,67,65,98,43,32)}")
+}
+//funcion que retorna la cantidad de mayores de edad de los parametros introducidos
+fun cantidadMayoresDeEdad(vararg edades: Int): Int {
+    var nMayores = 0
+    for (e in edades)
+        if (e >= 18)
+            nMayores++
+    return nMayores
+}
+
+
+Práctica 173.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//implementacion de lista semana con los dias de la semana
+//y utilizacion de sus propiedades basicas
+fun main() {
+    val semana: List<String> = listOf(
+        "lunes", "martes", "miercoles", "jueves",
+        "viernes", "sábado", "domingo"
+    )
+    println("Imprimir la lista completa")
+    println(semana)
+    println("Imprimir el primer elemento de la lista")
+    println(semana[0])
+    println("Imprimir el primer elemento de la lista")
+    println(semana.first())
+    println("Imprimir el último elemento de la lista")
+    println(semana.last())
+    println("Imprimir la cantidad de elementos de la lista")
+    println(semana.size)
+    println("Recorrer la lista completa con un for")
+    for (dia in semana)
+        print("$dia ")
+    println()
+    println("Imprimir el elemento y su posición")
+    for (posicion in semana.indices)
+        print("($posicion)${semana[posicion]} ")
+}
+
+
+Práctica 174.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//implementacion de lista mediante la funcion List y
+//expresion lambda
+fun main() {
+    val lista: List<Int> = List(5) { cargar() }
+    println(lista)
+}
+//funcion  que retorna un valor leido por pantalla
+fun cargar(): Int {
+    println("Ingrese un entero:")
+    val valor = readLine()!!.toInt()
+    return valor
+}
+
+
+
+Práctica 175.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//implementacion de MutableList con edades
+//y utilizacion de sus propiedades basicas
+fun main() {
+    val edades: MutableList<Int> = mutableListOf(23, 67, 12, 35, 12)
+    println("Lista de edades")
+    println(edades)
+    edades[0] = 60
+    println("Lista completa después de modificar la primer edad")
+    println(edades)
+    println("Primera edad almacenada en la lista")
+    println(edades[0])
+    println("Promedio de edades")
+    println(edades.average())
+    println("Agregamos una edad al final de la lista:")
+    edades.add(50)
+    println("Lista de edades")
+    println(edades)
+    println("Agregamos una edad al principio de la lista:")
+    edades.add(0, 17)
+    println("Lista de edades")
+    println(edades)
+    println("Eliminamos la primer edad de la lista:")
+    edades.removeAt(0)
+    println("Lista de edades")
+    println(edades)
+    print("Cantidad de personas mayores de edad:")
+    val cant = edades.count { it >= 18 }
+    println(cant)
+    edades.removeAll { it == 12 }
+    println("Lista de edades después de borrar las que tienen 12 años")
+    println(edades)
+    edades.clear()
+    println("Lista de edades luego de borrar la lista en forma completa")
+    println(edades)
+    if (edades.isEmpty())
+        println("No hay edades almacenadas en la lista")
+}
+
+
+Práctica 176.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//implementacion de mutable list dados, llenado con funcion lambda
+//contado de valores igual a 1 y eliminacion de valores iguales a 6
+fun main() {
+    val dados: MutableList<Int> = MutableList(20) { (Math.random() * 6 + 1).toInt() }
+    println(dados)
+    val contar1 = dados.count() {it == 1}
+    println("hay $contar1 valores igual a 1")
+    dados.removeAll {it == 6}
+    println(dados)
+}
+
+
+Práctica 177.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+
+//implementacion de mutableList de tipo persona, impresion
+//de todas mediante metodo foreach y conteo de mayores de edad
+fun main() {
+    val personas: MutableList<Persona2> = mutableListOf(
+        Persona2("pepe", 22),
+        Persona2("juan", 12),
+        Persona2("ruben", 25),
+        Persona2("lucas", 65),
+    )
+    personas.forEach { it.imprimir() }
+    var nMayores = personas.count { it.edad >= 18 }
+    println("hay $nMayores personas mayores de edad")
+}
+
+//clase Persona con nombre y edad
+class Persona2(var nombre: String, var edad: Int) {
+
+    //funcion para imprimir la persona
+    fun imprimir() {
+        println("nombre: $nombre, edad: $edad")
+    }
+
+    //funcion que muestra si una persona es mayor de edad
+    fun esMayorDeEdad() {
+        if (edad >= 18) {
+            imprimir()
+            println("es mayor de edad")
+        } else {
+            imprimir()
+            println("no es mayor de edad")
+        }
+    }
+}
+
+
+
+Práctica 178.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+
+//creacion de lista, conteo de rangos y verificacion de aparicion
+//de valor numero 20
+fun main() {
+    val numeros: List<Int> = List(100) { (Math.random() * 20 + 1).toInt() }
+    println(numeros)
+    val cant1_4 = numeros.count { it in 1..4 }
+    val cant5_8 = numeros.count { it in 5..8 }
+    val cant10_13 = numeros.count { it in 10..13 }
+    println("hay $cant1_4 numeros entre el 1 y el 4")
+    println("hay $cant5_8 numeros entre el 5 y el 8")
+    println("hay $cant10_13 numeros entre el 10 y el 13")
+    if (20 in numeros)
+        println("hay almenos un 20 en la lista")
+}
+
+
+Práctica 179.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+
+//implementacion de mutableList de tipo Empleado, impresion y conteo
+//de los salarios de los elementos en la lista
+fun main() {
+    var empleados = mutableListOf(
+        Empleado("pepe", 1000),
+        Empleado("ruben", 1900),
+        Empleado("luca", 2700),
+    )
+    empleados.forEach { it.imprimir() }
+    var sumaSalarios = 0
+    empleados.forEach { sumaSalarios += it.sueldo }
+    println("gasto total: $sumaSalarios")
+
+    empleados.add(Empleado("diegas", 200))
+    sumaSalarios = 0
+    empleados.forEach { sumaSalarios += it.sueldo }
+    println("gasto total: $sumaSalarios")
+}
+
+//clase Empleado con nombre y sueldo
+class Empleado(var nombre: String, var sueldo: Int) {
+
+    //funcion para imprimir el empleado
+    fun imprimir() {
+        println("nombre: $nombre, sueldo: $sueldo")
+    }
+}
+
+
+
+Práctica 180.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte9 completado`
+//implementacion de lista inmutable de tipo Double
+//calculo de promedio y conteo de personas bajas y altas
+fun main() {
+    val alturas = List(5) {
+        println("introducir altura:")
+        readLine()!!.toDouble()
+    }
+    val promedio = alturas.average()
+    val bajos = alturas.count() { it < promedio }
+    val altos = alturas.count() { it > promedio }
+
+    println("el promedio es $promedio")
+    println("hay $bajos personas por debajo del promedio")
+    println("hay $altos personas por encima del promedio")
+}
+
+
+Práctica 181.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
+//implementacion de Map de paises y utilizacion de
+//sus funcionalidades basicas
+fun main() {
+    val paises: Map<String, Int> = mapOf(
+        Pair("argentina", 40000000),
+        Pair("españa", 46000000),
+        Pair("uruguay", 3400000))
+    println("Listado completo del Map")
+    println(paises)
+    for ((clave, valor) in paises)
+        println("Para la clave $clave tenemos almacenado $valor")
+    println("La cantidad de elementos del mapa es ${paises.size}")
+    val cantHabitantes1: Int? = paises["argentina"]
+    if (cantHabitantes1 != null)
+        println("La cantidad de habitantes de argentina es $cantHabitantes1")
+    val cantHabitantes2: Int? = paises["brasil"]
+    if (cantHabitantes2 != null)
+        println("La cantidad de habitantes de brasil es $cantHabitantes2")
+    else
+        println("brasil no se encuentra cargado en el Map")
+    var suma = 0
+    paises.forEach { suma += it.value }
+    println("Cantidad total de habitantes de todos los paises es $suma")
+}
+
+
+Práctica 182.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
+//implementacion de mapa de productos, impresion de los mismos
+//y conteo de los articulos con precios superiores a 20
+fun main() {
+    val articulos = mapOf(
+        Pair("peine", 10),
+        Pair("raton", 78),
+        Pair("gafas", 34),
+        Pair("alfombrilla", 15),
+    )
+    articulos.forEach { imprimirArticulo(it) }
+    val mayoresA20 = articulos.count() { it.value > 20 }
+    println("hay $mayoresA20 articulos con precio superior a 20")
+}
+//funcion para imprimir cada entrada del mapa de articulos
+fun imprimirArticulo(articulo: Map.Entry<String, Int>) {
+    println("nombre del articulo: ${articulo.key}, precio: ${articulo.value}")
+}
+
+
+Práctica 183.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
+//implementacion de diccionario mediante mapa
+fun main() {
+    val diccionario = mapOf(
+        entrada(), entrada(), entrada()
+    )
+    mostrar(diccionario)
+    buscar(diccionario)
+}
+
+//funcion para introducir entradas al diccionario
+fun entrada(): Pair<String, String> {
+    println("introducir palabra en ingles")
+    val key = readLine()!!.toString()
+    println("introducir palabra en castellano")
+    val value = readLine()!!.toString()
+    return Pair(key, value)
+}
+
+//funcion para mostrar el diccionario
+fun mostrar(diccionario: Map<String, String>) {
+    for ((ingles, castellano) in diccionario)
+        println("palabra en ingles: $ingles, palabra en castellano: $castellano")
+}
+
+//funcion para buscar una palabra en el diccionario
+fun buscar(diccionario: Map<String, String>) {
+    println("palabra a buscar en ingles")
+    val buscar = readLine()!!.toString()
+    if (buscar in diccionario)
+        println(diccionario.get(buscar))
+    else
+        println("la palabra no esta en el diccionario")
+}
+
+
+Práctica 184.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
+//implementacion de un mapa de productos y utlizacion de funciones
+fun main() {
+    val productos = mutableMapOf<Int, Producto>()
+    llenar(productos)
+    mostrarProductos(productos)
+    stock0(productos)
+}
+
+//funcion para llenar el mapa con productos
+fun llenar(mapa: MutableMap<Int, Producto>) {
+    mapa[20] = Producto("cafetera", 20f, 3)
+    mapa[27] = Producto("tetera", 17f, 56)
+    mapa[29] = Producto("sarten", 12f, 7)
+    mapa[30] = Producto("camion", 200f, 0)
+}
+
+//funcion para mostrar los productos del mapa
+fun mostrarProductos(diccionario: Map<Int, Producto>) {
+    for ((cod, prod) in diccionario)
+        println("codigo: $cod, nombre:${prod.nombre}, precio: ${prod.precio}, cantidad: ${prod.cantidad}")
+}
+//funcion para mostrar si un producto tiene 0 de stock
+fun stock0(diccionario: Map<Int, Producto>) {
+    for ((cod, prod) in diccionario)
+        if (prod.cantidad == 0)
+            println("el producto con codigo $cod tiene 0 de stock")
+}
+
+//data class producto
+data class Producto(val nombre: String, val precio: Float, val cantidad: Int)
+
+
+
+Práctica 185.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
+//implementacion de un mutableMap de alumnos y utilizacion de funciones
+fun main() {
+    val alumnos = mutableMapOf<Int, MutableList<Materia>>()
+    llenar(alumnos)
+    listado(alumnos)
+    consulta(alumnos)
+}
+//funcion para llenar el mutable map de alumnos
+fun llenar(alumnos: MutableMap<Int, MutableList<Materia>>) {
+    println("cantidad de alumnos a introducir")
+    val cant = readLine()!!.toInt()
+    for (i in 1..cant) {
+        println("ingresar dni:")
+        val dni = readLine()!!.toInt()
+        var continuar = "s"
+        val materias = mutableListOf<Materia>()
+        while (continuar == "s") {
+            println("introducir materia:")
+            val materia = readLine()!!.toString()
+            println("introducir nota:")
+            val nota = readLine()!!.toInt()
+            println("continuar introduciendo materias?(s/n):")
+            continuar = readLine()!!.toString()
+            materias.add(Materia(materia, nota))
+        }
+        alumnos[dni] = materias
+    }
+}
+//funcion para mostrar el mutable mapa de alumnos
+fun listado(alumnos: MutableMap<Int, MutableList<Materia>>) {
+    for ((dni, materias) in alumnos) {
+        println("dni: $dni, materias:")
+        for (materia in materias)
+            println("\t${materia.nombre}, nota: ${materia.nota}")
+    }
+    println()
+}
+//funcion para consultar un alumno
+fun consulta(alumnos: MutableMap<Int, MutableList<Materia>>) {
+    println("introducir dni alumno")
+    val dni = readLine()!!.toInt()
+    val materias = alumnos.get(dni)
+    if (materias != null) {
+        for (materia in materias)
+            println("\t${materia.nombre}, nota: ${materia.nota}")
+    }else
+        println("el alumno introducido no existe")
+}
+//data class materia
+data class Materia(val nombre: String, val nota: Int)
+
+
+
+Práctica 186.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
+
+//implementacion de un mutableMap de agenda
+fun main() {
+    val agenda = mutableMapOf<Fecha, String>()
+    llenar(agenda)
+    imprimir(agenda)
+    consultar(agenda)
+}
+
+//funcion para llenar el mutable map de alumnos
+fun llenar(agenda: MutableMap<Fecha, String>) {
+    println("cantidad de fechas a introducir")
+    val cant = readLine()!!.toInt()
+    for (i in 1..cant) {
+        println("ingresar dia:")
+        val dia = readLine()!!.toInt()
+        println("ingresar mes:")
+        val mes = readLine()!!.toInt()
+        println("ingresar año:")
+        val anio = readLine()!!.toInt()
+        println("ingresar actividades:")
+        val actividades = readLine()!!.toString()
+        agenda[Fecha(dia, mes, anio)] = actividades
+    }
+}
+
+//funcion para imprimir la agenda
+fun imprimir(agenda: MutableMap<Fecha, String>) {
+    for ((fecha, actividades) in agenda)
+        println("Fecha: ${fecha.dia}-${fecha.mes}-${fecha.anio}\nactividades: $actividades")
+}
+
+//funcion para consultar una fecha en la agenda
+fun consultar(agenda: MutableMap<Fecha, String>) {
+    println("ingresar dia:")
+    val dia = readLine()!!.toInt()
+    println("ingresar mes:")
+    val mes = readLine()!!.toInt()
+    println("ingresar año:")
+    val anio = readLine()!!.toInt()
+    val fecha = Fecha(dia, mes, anio)
+    if (fecha in agenda)
+        println(agenda[fecha])
+    else
+        println("la fecha introducida no esta introducida")
+}
+
+data class Fecha(val dia: Int, val mes: Int, val anio: Int)
+
+
+
+Práctica 187.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
+
+//implementacion de mutableSet y utilizacion de sus funcionalidades basicas
+fun main() {
+    val conjunto1: MutableSet<Int> = mutableSetOf(2, 7, 20, 150, 3)
+    println("Listado completo del conjunto")
+    for (elemento in conjunto1)
+        print("$elemento ")
+    println()
+    println("Cantidad de elementos del conjunto: ${conjunto1.size}")
+    conjunto1.add(500)
+    println("Listado completo del conjunto luego de agregar el 500")
+    for (elemento in conjunto1)
+        print("$elemento ")
+    println()
+    conjunto1.add(500)
+    println("Listado completo del conjunto luego de volver a agregar el 500")
+    for (elemento in conjunto1)
+        print("$elemento ")
+    println()
+    if (500 in conjunto1)
+        println("El 500 está almacenado en el conjunto")
+    else
+        println("El 500 no está almacenado en el conjunto")
+    println("Eliminamos el elemento 500 del conjunto")
+    conjunto1.remove(500)
+    if (500 in conjunto1)
+        println("El 500 está almacenado en el conjunto")
+    else
+        println("El 500 no está almacenado en el conjunto")
+    val cant = conjunto1.count { it >= 10 }
+    println("Cantidad de elementos con valores superiores o igual a 10: $cant")
+}
+
+
+Práctica 188.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
+
+//implementacion de Set de tipo Fecha
+fun main() {
+    val feriados: Set<Fecha> = setOf(
+        Fecha(1, 1, 2017),
+        Fecha(25, 12, 2017)
+    )
+    esFeriado(feriados)
+}
+
+//funcion para comprobar si unna fecha es feriado
+fun esFeriado(feriados: Set<Fecha>) {
+    print("Ingrese el día:")
+    val dia = readLine()!!.toInt()
+    print("Ingrese el mes:")
+    val mes = readLine()!!.toInt()
+    print("Ingrese el año:")
+    val anio = readLine()!!.toInt()
+    if (Fecha(dia, mes, anio) in feriados)
+        println("La fecha ingresada es feriado")
+    else
+        println("La fecha ingresada no es feriado")
+}
+
+
+
+
+Práctica 189.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
+
+fun main() {
+    val boleto = boleto()
+    val tiradas: MutableSet<Int> = mutableSetOf()
+    while (!tiradas.containsAll(boleto))
+        tirar(tiradas)
+    println("boleto: $boleto")
+    println("tiradas: $tiradas")
+    println("tiradas totales: ${tiradas.size}")
+}
+
+fun boleto(): MutableSet<Int> {
+    val boleto = mutableSetOf<Int>()
+    while (boleto.size <= 6)
+        boleto.add((Math.random() * 50 + 1).toInt())
+    return boleto
+}
+
+fun tirar(tiradas: MutableSet<Int>) {
+    var tirada = (Math.random() * 50 + 1).toInt()
+    while (tirada in tiradas)
+        tirada = (Math.random() * 50 + 1).toInt()
+    println("tirada: $tirada")
+    tiradas.add(tirada)
+}
+
+
+Práctica 190.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
+
+import com.example.alejandronasarreparte1_pmdm.matematicas.*
+
+//implementacion de package externo matematicas
+fun main() {
+    println(sumar(2, 4))
+    println(restar(2, 4))
+}
+
+
+Práctica 191.
+
+
+package com.example.alejandronasarreparte1_pmdm.`parte10 completado`
+
+import com.example.alejandronasarreparte1_pmdm.entradaTeclado.*
+
+//import del package intrada teclado
+fun main() {
+    val mensaje = "introducir valor"
+    val n1 = retornarInt(mensaje)
+    println(n1)
+    val n2 = retornarFloat(mensaje)
+    println(n1)
+    val n3 = retornarDouble(mensaje)
+    println(n1)
+}
+
+
